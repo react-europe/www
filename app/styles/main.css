@@ -1,0 +1,129 @@
+body {
+font-family: 'Alegreya Sans', sans-serif;
+    font-size: 17px;
+/*padding-top: 60px;*/
+}
+
+li.active-re a { 
+    color: #3498db !important; 
+}
+
+.navbar-brand {
+font-size: 23px;
+}
+
+a.navbar-brand:hover {
+     color: #3498db !important;    
+}
+
+.blue-under {
+border-bottom: 2px solid #3498db;
+}
+
+#home {
+margin-top: 0px;
+}
+
+.jumbotron {
+ background-color: #FFFFFF; 
+    padding: 130px 0px 50px 0px!important;
+}
+
+
+#txt-logo {
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 75px;
+  } 
+
+.jumbotron h2{
+     text-align: center;
+    font-size: 23px;
+  }  
+
+.lead {
+font-size: 26px !important;
+     text-align: center;
+     margin: 0 150px;
+}
+
+.btn-info {
+margin-top: 21px;
+}
+
+.btn-lg {
+padding: 18px 40px;
+font-size: 25px;
+line-height: 1.33;
+border-radius: 10px;
+}
+
+#about {
+    background: #2c3e50;
+    color: #FFFFFF;
+    margin-top: -30px;
+    padding-bottom: 60px;
+}
+
+h2.title {
+    text-align: center;
+    font-size: 50px;
+    margin: 60px 0px 30px;
+}
+
+h2.thin {
+font-weight: 300;
+}
+
+section#about>div {
+font-size: 22px;
+}
+
+
+.img-circle{
+    width:100px;
+    height:100px;
+    background: #e7e7e7;
+}
+
+.speaker {
+    min-height: 130px;
+}
+
+.media-heading {
+font-size: 26px;
+margin: 0 0 5px;
+color: #3498db;
+}
+
+.media-heading:hover {
+cursor: pointer;
+}
+
+.media-sub {
+margin: 0px;
+font-size: 20px;
+    line-height: 1.1;
+}
+
+.collpase p {
+margin: 0 0 10.5px;
+    line-height: 1;
+}
+
+.getting-there-subsection {
+text-align: center;
+margin-top: 30px;
+}
+
+.getting-there-subsection a {
+ font-weight: 700;
+    font-size: 22px;
+}
+
+.getting-there-subsection a:hover {
+ text-decoration: none;
+}
+

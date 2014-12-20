@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>react europe</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+      <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/Font-Awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+   <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+          <span class="blue-under">React-europe</span>
+          <span>2015</span>
+        </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" >
+      <ul class="nav navbar-nav ">
+        <li class="active-re"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Speakers</a></li>
+        <li><a href="#">Sponsors</a></li>
+        <li><a href="#">Getting There</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Lightning Talks</a></li>
+        </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active-re"><a href="#">Buy Tickets »</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+      <section class="jumbotron">
+          <div class="introduction">
+        <h1 id="txt-logo">React-europe 2015</h1>
+        <h2>Always a pleasure scaffolding your apps.</h2>
+         <p class="lead">
+          Organised, curated and delivered by developers at the heart of the reactive community, React is your opportunity to share in their experiences and lessons learned in building some of the most complex and demanding software systems.
+              </p>
+        <p class="text-center">
+            <a class="btn btn-lg btn-info" href="#">
+                <span class="fa fa-star-o pull-left fa-border"></span>
+                <span>Get tickets!</span>
+            </a>
+        </p>
+            </div>
+      </section>
+
+
+      <section id="about">
+	<div class="container">
+	  <div class="col-lg-12">
+	    <h2 class="title thin">About React</h2>
+	    <p>
+	      Building large-scale applications or systems? If so, then React is the conference for you.
+            </p>
+            <p>Featuring renowned industry experts and pioneers (including the 2013 Turing Award winner Leslie Lamport; inventor of Akka, Jonas Boner; high-performance guru, Martin Thompson, and many more), React brings together a mixture of <a href="#schedule">talks</a>, <a href="http://lanyrd.com/2014/reactsf/sdczmq/">speaker clinics</a> and <a href="http://lanyrd.com/2014/reactsf/nov-20/">workshops</a> that present a carefully crafted, coherent journey through the reactive stack, trait by trait, UI to database.
+	    </p>
+	    <p>
+	      Think of React as a learning event, one that actively encourages you to engage and interact with some of the foremost thinkers in reactive system design, all wrapped up in a <a href="#getting-there">small and intimate setting</a>.  If you are in any way interested in or involved with building <strong>distributed</strong>, <strong>responsive</strong>, <strong>resilient</strong>, <strong>elastic</strong> systems then React is the event for you.
+	    </p>
+	  </div>
+	</div>
+    </section>
+
+
+     <section id="speakers">
+      <div class="container">
+        <h2 class="thin title">The Speakers</h2>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle" src="http://placekitten.com/g/200/200" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#martin">Martin Thompson</h4><h4 class="media-sub">High-Performance &amp; low-latency computing specialist</h4>
+              <div id="martin" class="collapse">
+                 <p>
+                 Martin is a high-performance and low-latency specialist, with experience gained over two decades working on the bleeding edge of large transactional and big-data systems. He believes in Mechanical Sympathy, i.e. applying an understanding of the hardware to the creation of software as being fundamental to delivering elegant high-performance solutions. The Disruptor framework is just one example of what his mechanical sympathy has created.
+                </p>
+                <p>
+                Martin was the co-founder and CTO of LMAX. He blogs at mechanical-sympathy.blogspot.com, and can be found giving training courses on performance and concurrency when he is not cutting code to make systems better.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle" src="http://placekitten.com/g/200/200" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#jonas">Jonas Bonér</h4><h4 class="media-sub">Inventor of Akka.  Co-founder &amp; CTO Typesafe</h4>
+              <div id="jonas" class="collapse">
+                  <p>Jonas Bonér is a programmer, speaker, writer, Java Champion and entrepreneur. He is the co-founder and CTO of Typesafe and is an active contributor to the open source community; most notably started the Akka project and the AspectWerkz AOP runtime (now AspectJ). Learn more at: <a href="http://jonasboner.com" target="_blank">http://jonasboner.com</a>
+                      </p>
+                </div>
+            </div>
+          </div>
+        </div>
+          
+          <div class="clearfix"></div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle" src="" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#leslie">Leslie Lamport</h4>
+              <h4 class="media-sub">2013 Turing Award winner &amp; Principle Researcher at Microsoft Research.</h4>
+              <div id="leslie" class="collapse">
+                <p>
+                Leslie Lamport’s is a pioneering computer sciencist best known for his seminal work in distributed systems and concurrent algorithms. His ideas can be found at the core of everything from multi-processor technology such as very-large-scale-integration (VLSI) semiconductors through to multi-computer networks such as the Internet.
+                </p>
+                <p>
+                Leslie has authored or co-authored nearly 150 publications on concurrent and distributed computing and their applications. One of his most notable papers, “Time, Clocks, and the Ordering of Events in a Distributed System,” ranks as one of the most important and influential papers in computer science.
+                </p>
+                <p>
+                He is a past recipient of the IEEE Emanuel R. Piore Award, the Edsger W. Dijkstra Prize in Distributed Computing and the influential paper award at the Principles of Distributed Computing Conference. In 2013 he was the recipient of the Turing Award.
+                </p>
+                <p>
+                Dr. Lamport holds a bachelor’s degree from the Massachusetts Institute of Technology, Cambridge, as well as a masters and doctorate from Brandeis University, Waltham, Massachusetts. Since 2001 he has been Principle Researcher at the Microsoft Research Silicon Valley Center.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle" src="" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#pat">Pat Helland</h4>
+              <h4 class="media-sub">Distributed systems and database visionary. Salesforce Software Architect.</h4>
+              <div id="pat" class="collapse">
+                 <p>
+                   Pat Helland has 36 years experience implementing databases, transaction systems, application platforms, replication systems, fault tolerance, and distributed systems.
+                 </p>
+                  <p>
+                   During the 1980s, Pat was Chief Architect of the Tandem NonStop's TMF (Transaction Monitoring Facility), the transaction processing and recover engine behind NonStop SQL.
+                 </p>
+                 <p>
+                   He started working at Microsoft in 1994 and drove the design and architecture for MTS (Microsoft Transaction Server), the N-tier transactional computing environment for Windows as well DTC, the Distributed Transaction Coordinator.  A few years later, Pat led the development of SQL Service Broker, a high speed exactly once transactional messaging system.
+                 </p>
+                 <p>
+                   From 2005 to early 2007, Pat worked at Amazon on the Product Catalog.  In 2007, he returned to Microsoft working on a number of projects including adding indexing and affinitized placement of data into Cosmos, the massively parallel computation and storage engine behind Bing (Big Data).  Cosmos supports exabytes of data running on hundreds of thousands of computers.   He was one of the original architects for the realtime event driven transactional engine for Cosmos.
+                 </p>
+                 <p>
+                  Since early 2012, Pat has worked at Salesforce.com on database management, storage, and data center issues.
+                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <div class="clearfix"></div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle" src="" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#gil">Gil Tene</h4>
+              <h4 class="media-sub">JVM pioneer. Founder of Azul Systems</h4>
+              <div id="gil" class="collapse">
+                 <p>
+                    Gil Tene is CTO and co-founder of Azul Systems. He has been involved with virtual machine and runtime technologies for the past 25 years. His pet focus areas include system responsiveness and latency behavior. Gil is a frequent speaker at technology conferences worldwide, and an official JavaOne Rock Star. He pioneered the Continuously Concurrent Compacting Collector (C4) that powers Azul's continuously reactive Java platforms. In past lives, he also designed and built operating systems, network switches, firewalls, and laser based mosquito interception systems.
+                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle" src="" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#benh">Ben Hindman</h4>
+              <h4 class="media-sub">Co-Creator, Apache Mesos. Hacker at Twitter.</h4>
+              <div id="benh" class="collapse">
+                  <p>
+                Ben Hindman is one of the creators of Apache Mesos, a platform for building and running resource-efficient distributed systems at scale. Ben started working on Mesos as a PhD student at Berkeley before he brought it to Twitter where it runs on thousands of machines. An academic at heart, his research in programming languages and distributed systems has been published in leading academic conferences.
+                      </p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <div class="clearfix"></div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+             <a class="media-left" href="#">
+              <img class="img-circle" src="" alt="React Speakers">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#benc">Ben Christensen</h4>
+              <h4>Software Engineer on Netflix Edge Engineering Team.</h4>
+              <div id="benc" class="collapse">
+                <p>
+                  Ben Christensen is on the Netflix Edge Engineering team responsible for fault tolerance, performance, architecture and scale while enabling millions of customers to access the Netflix experience across more than 1,000 different device types. Involved in open-source projects such as Hystrix (https://github.com/Netflix/Hystrix) and RxJava (https://github.com/Netflix/RxJava). Prior to Netflix, Ben was at Apple making iOS apps and media available on the iTunes store.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle" src="" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#dean">Dean Wampler</h4>
+              <h4 class="media-sub">Distributed computing specialist. Typesafe consultant.</h4>
+              <div id="dean" class="collapse">
+                 <p>
+                    Dean Wampler is a consultant for Typesafe. He specializes in scalable, distributed, data-centric application development, "Big Data" or otherwise, applying Functional Programming principles with the Typesafe Reactive Platform, Hadoop, and other tools. Dean is a contributor to several open-source projects and the founder of the Chicago-Area Scala Enthusiasts. He is the co-author of "Programming Scala", the author of "Functional Programming for Java Developers", and the co-author of "Programming Hive", all from O'Reilly. He pontificates on twitter, @deanwampler.
+                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <div class="clearfix"></div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle" src="" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#lee">Lee Campbell</h4>
+              <h4 class="media-sub">Author and Rx expert. Developer at Adaptive</h4>
+              <div id="lee" class="collapse">
+                 <p>
+                   Lee is a software consultant, developer and author with extensive experience in concurrent programming, composite applications and integration
+                   technologies. He has experience developing composite applications for the Financial Services sector from the Buy side, Sell side and Retail banking.
+                 </p>
+                 <p>
+                   He specialises in building Trading applications in WPF and Rx, and currently is a consultant for Adaptive.
+                 </p>
+                 <p>
+                   Lee is also the author of the 5-star rated book <a href="http://www.IntroToRx.com">Introduction to Rx</a>.
+                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+            <a class="media-left" href="#">
+              <img class="img-circle" src="" alt="React Speakers">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#matt">Matt Barrett</h4>
+              <h4>Builder of real time systems.  Co-Founder of Adaptive</h4>
+              <div id="matt" class="collapse">
+                <p>
+                   Matt has been involved with building reliable, scalable systems in both television and financial services, and has seen the similarities and differences in their approaches to reliability and functionality. He was introduced to the concepts of the reactive manifesto via Microsoft's Rx when building a single-dealer platform for an investment bank a number of years ago and hasn't looked back since.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="clearfix"></div>
+          
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle" src="" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#andrew">Andrew Stewart</h4>
+              <h4 class="media-sub">High performance specialist. Head of Analysis at LMAX Exchange</h4>
+              <div id="andrew" class="collapse">
+                  <p>Andrew Stewart currently leads the business analysis team at LMAX, and has spent more than 20 years working in software development in organisations ranging from 3-strong start-ups to global consultancy firms and on engagements spanning banking, insurance, pharmaceuticals, utilities, oil &amp; gas, telecommunications, gambling and most recently foreign exchange trading systems. The bulk of his experience is in the data, modelling and MI space, specialising in high volume, high performance and inevitably high technology risk projects.
+                      </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle" src="" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#andy">Andy Piper</h4>
+              <h4 class="media-sub">CTO Push Technology</h4>
+              <div id="andy" class="collapse">
+                  <p>
+                Dr Andy Piper recently joined the Push Technology team as Chief Technology Officer. Previously a Technical Director at Oracle Corporation, Andy has over 18 years experience working at the forefront of the technology industry. In his role at Oracle, Andy lead development for Oracle Complex Event Processing (OCEP) as well as driving global product strategy and innovation. Prior to Oracle, Andy was an architect for the WebLogic Server Core at BEA Systems, a provider of middleware infrastructure technologies.
+                      </p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <div class="clearfix"></div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle" src="" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#todd">Todd L. Montgomery</h4>
+              <h4 class="media-sub">Messaging middleware creator. Ex-NASA researcher and network geek.</h4>
+              <div id="todd" class="collapse">
+                  <p>
+               Todd is a networking hacker who has researched, designed, and built numerous protocols, messaging-oriented middleware systems, and real-time data systems, done research for NASA, contributed to the IETF and IEEE, and co-founded two startups. He currently works for Kaazing as Chief Architect.
+                      </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 speaker">
+          <div class="media">
+              <a class="media-left" href="#">
+            <img class="img-circle pull-left" src="" alt="React Speakers">
+                  </a>
+            <div class="media-body">
+              <h4 class="media-heading" data-toggle="collapse" data-target="#nitesh">Nitesh Kant</h4>
+              <h4 class="media-sub">Author of RxNetty. Works on Netflix's cloud platform team.</h4>
+              <div id="nitesh" class="collapse">
+                <p>
+                Nitesh is on the Netflix's cloud platform team responsible for Netflix's Inter Process Communication stack. Nitesh is primarily involved in the open sourced projects: Eureka (https://github.com/Netflix/eureka), RxNetty (https://github.com/ReactiveX/RxN...) and Karyon (https://github.com/Netflix/karyon).
+                </p>
+                <p>
+                These libraries form the core of all applications inside Netflix, serving billions of requests per day. Prior to Netflix, Nitesh was one of the early members of apigee (http://apigee.com/) team and created their API platform.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+       <section id="getting-there">
+           <h2 class="thin title">Getting There</h2>
+               <img src="images/map.png" width="100%">
+           <div class="container">
+             <div class="col-lg-12 getting-there-subsection">
+                <p>The conference takes place at <img class="img-responsive" src="images/logo.jpg" alt="Espace Charenton"><br><a href="https://www.google.com/maps/place/Espace+Charenton/@48.832651,2.396575,17z/data=!3m1!4b1!4m2!3m1!1s0x47e67242e2b4a6a5:0xff70319942e6fc13" target="_blank">327, rue de Charenton<br>75012 Paris</a> <br> You'll find the space relaxed, informal and totally conducive to conversation and learning.</p><br><a href="http://www.espacecharenton.com/hotels-proches-des-salles-d-evenementiel-paris.htm#.VJTYZPcHn1I" target="_blank">Practical information</a>
+            </div>
+        </div>
+     </section>
+      
+
+      
+      
+
+      <div class="footer">
+        <p>♥ from the Yeoman team</p>
+      </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="../bower_components/bootstrap/js/affix.js"></script>
+        <script src="../bower_components/bootstrap/js/alert.js"></script>
+        <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="../bower_components/bootstrap/js/modal.js"></script>
+        <script src="../bower_components/bootstrap/js/transition.js"></script>
+        <script src="../bower_components/bootstrap/js/button.js"></script>
+        <script src="../bower_components/bootstrap/js/popover.js"></script>
+        <script src="../bower_components/bootstrap/js/carousel.js"></script>
+        <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap/js/collapse.js"></script>
+        <script src="../bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
