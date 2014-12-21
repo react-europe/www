@@ -60,7 +60,7 @@ line-height: 1.33;
 border-radius: 10px;
 }
 
-#about {
+section#about {
     background: #2c3e50;
     color: #FFFFFF;
     margin-top: -30px;
@@ -88,6 +88,10 @@ font-size: 22px;
     background: #e7e7e7;
 }
 
+section#speakers {
+    padding-bottom: 40px;
+}
+
 .speaker {
     min-height: 130px;
 }
@@ -103,27 +107,68 @@ cursor: pointer;
 }
 
 .media-sub {
-margin: 0px;
+margin: 0px 0px 8px;
 font-size: 20px;
-    line-height: 1.1;
+font-weight: 500;
+
 }
 
-.collpase p {
-margin: 0 0 10.5px;
-    line-height: 1;
+section#getting-there {
+background-color: #f0f0f0;
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+    padding-bottom: 70px;
+    position:relative;
 }
 
-.getting-there-subsection {
-text-align: center;
-margin-top: 30px;
+#map-dialog{
+    position: absolute;
+    top: 370px;
+    background: #FFF;
+    padding: 25px;
 }
 
-.getting-there-subsection a {
- font-weight: 700;
-    font-size: 22px;
+#location-address a {
+    color: #173075;
 }
 
-.getting-there-subsection a:hover {
+#location-address a:hover {
  text-decoration: none;
 }
+
+.panel-title a {
+height: 55px;
+line-height: 55px;
+display: block;
+color: #000;
+padding: 0 30px;
+font-size: 22px;
+    text-decoration: none;
+}
+
+span.calendar-day {
+font-weight: bolder;
+    margin-left: 5px;
+}
+
+.panel-heading {
+padding: 0px; 
+border-bottom: 2px solid #173075 !important;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+}
+
+.pull-right {
+margin-top: 12px;
+}
+
+.media a:hover {
+text-decoration: none;
+}
+
+.media-left > div { 
+    margin: 0 auto; 
+    width: 80%;
+}
+
 

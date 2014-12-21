@@ -28,7 +28,7 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -41,7 +41,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" >
+    <div class="navbar-collapse collapse" >
       <ul class="nav navbar-nav ">
         <li class="active-re"><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -95,7 +95,7 @@
 
      <section id="speakers">
       <div class="container">
-        <h2 class="thin title">The Speakers</h2>
+        <h2 class="thin title">The speakers</h2>
 
         <div class="col-lg-6 speaker">
           <div class="media">
@@ -382,16 +382,104 @@
       
        <section id="getting-there">
            <h2 class="thin title">Getting There</h2>
-               <img src="images/map.png" width="100%">
-           <div class="container">
-             <div class="col-lg-12 getting-there-subsection">
-                <p>The conference takes place at <img class="img-responsive" src="images/logo.jpg" alt="Espace Charenton"><br><a href="https://www.google.com/maps/place/Espace+Charenton/@48.832651,2.396575,17z/data=!3m1!4b1!4m2!3m1!1s0x47e67242e2b4a6a5:0xff70319942e6fc13" target="_blank">327, rue de Charenton<br>75012 Paris</a> <br> You'll find the space relaxed, informal and totally conducive to conversation and learning.</p><br><a href="http://www.espacecharenton.com/hotels-proches-des-salles-d-evenementiel-paris.htm#.VJTYZPcHn1I" target="_blank">Practical information</a>
+                <img src="images/map2.png" width="100%">
+           <div id="map-dialog">
+           <img class="img-responsive" src="images/logo.jpg" alt="Espace Charenton">
+                <p id="location-address">
+                    <a href="https://www.google.com/maps/place/Espace+Charenton/@48.832651,2.396575,17z/data=!3m1!4b1!4m2!3m1!1s0x47e67242e2b4a6a5:0xff70319942e6fc13" target="_blank">
+                        <strong>Espace Charenton</strong> 
+                        <br>
+                        327, rue de Charenton
+                        <br>
+                        75012 Paris
+                    </a>
+                    <br>
+               </p>
+               <a href="#" target="_blank">Practical information</a>
+           </div>
+</section>
+      
+      
+      <section id="schedule">
+          <div class="container">
+            <h2 class="thin title">The Schedule</h2>
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <span class="fa fa-calendar"></span>
+            <span class="calendar-day">Day 1</span>
+            <small> - Wednesday 1st July</small>
+            <span class="fa fa-plus-circle pull-right fa-border"></span>
+          </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+          <div class="media">
+              <div class="media-left" href="#">
+                <img class="img-circle" src="http://placekitten.com/g/200/200" alt="">
+                  <div>
+                  <span>
+                  <i class="fa fa-clock-o"></i>
+                  10:30
+                    </span>
+                  <p>
+                 <i class="fa fa-user"></i>
+                  Designer
+                    </p>
+                      </div>
             </div>
+           <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
         </div>
-     </section>
-      
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <span class="fa fa-calendar"></span>
+            <span class="calendar-day">Day 2</span>
+            <small> - Thursday 2nd July</small>
+            <span class="fa fa-plus-circle pull-right fa-border"></span>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <span class="fa fa-calendar"></span>
+            <span class="calendar-day">Day 3</span>
+            <small> - Friday 3rd July</small>
+            <span class="fa fa-plus-circle pull-right fa-border"></span>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+          <div class="program-accordion-item clearfix">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+      </div>
+    </div>
+  </div>
+</div>
+              </div>
+          </section>
 
-      
+    
       
 
       <div class="footer">
