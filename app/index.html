@@ -23,7 +23,7 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
+<div id="wrap">
    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,11 +44,11 @@
     <div class="navbar-collapse collapse" >
       <ul class="nav navbar-nav ">
         <li class="active-re"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Speakers</a></li>
-        <li><a href="#">Sponsors</a></li>
-        <li><a href="#">Getting There</a></li>
-        <li><a href="#">Schedule</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#getting-there">Getting There</a></li>
+        <li><a href="#schedule">Schedule</a></li>
         <li><a href="#">Lightning Talks</a></li>
         </ul>
 
@@ -60,35 +60,43 @@
 </nav>
 
       <section class="jumbotron">
-          <div class="introduction">
-        <h1 id="txt-logo">React-europe 2015</h1>
-        <h2>Always a pleasure scaffolding your apps.</h2>
-         <p class="lead">
-          Organised, curated and delivered by developers at the heart of the reactive community, React is your opportunity to share in their experiences and lessons learned in building some of the most complex and demanding software systems.
-              </p>
-        <p class="text-center">
-            <a class="btn btn-lg btn-info" href="#">
-                <span class="fa fa-star-o pull-left fa-border"></span>
-                <span>Get tickets!</span>
-            </a>
-        </p>
+              <div class="container-logo">
+                  <div class="row row-re">
+                      <div class="col-lg-8 col-lg-offset-2 brand">
+                    <div id="text-re">
+                    <strong>React Europe</strong>
+                    </div>
+                  <div id="minitext-re">
+                      July 02 &amp; 03 — Paris, France
+                  </div>
+                </div>
+                     </div>
             </div>
+            
       </section>
 
 
       <section id="about">
 	<div class="container">
+    <div class="row">
 	  <div class="col-lg-12">
 	    <h2 class="title thin">About React</h2>
 	    <p>
 	      Building large-scale applications or systems? If so, then React is the conference for you.
             </p>
-            <p>Featuring renowned industry experts and pioneers (including the 2013 Turing Award winner Leslie Lamport; inventor of Akka, Jonas Boner; high-performance guru, Martin Thompson, and many more), React brings together a mixture of <a href="#schedule">talks</a>, <a href="http://lanyrd.com/2014/reactsf/sdczmq/">speaker clinics</a> and <a href="http://lanyrd.com/2014/reactsf/nov-20/">workshops</a> that present a carefully crafted, coherent journey through the reactive stack, trait by trait, UI to database.
+            <p>Featuring renowned industry experts and pioneers (including the 2013 Turing Award winner Leslie Lamport; inventor of Akka, Jonas Boner; high-performance guru, Martin Thompson, and many more), React brings together a mixture of <a href="#">talks</a>, <a href="#">speaker clinics</a> and <a href="#">workshops</a> that present a carefully crafted, coherent journey through the reactive stack, trait by trait, UI to database.
 	    </p>
 	    <p>
-	      Think of React as a learning event, one that actively encourages you to engage and interact with some of the foremost thinkers in reactive system design, all wrapped up in a <a href="#getting-there">small and intimate setting</a>.  If you are in any way interested in or involved with building <strong>distributed</strong>, <strong>responsive</strong>, <strong>resilient</strong>, <strong>elastic</strong> systems then React is the event for you.
+	      Think of React as a learning event, one that actively encourages you to engage and interact with some of the foremost thinkers in reactive system design, all wrapped up in a <a href="#">small and intimate setting</a>.  If you are in any way interested in or involved with building <strong>distributed</strong>, <strong>responsive</strong>, <strong>resilient</strong>, <strong>elastic</strong> systems then React is the event for you.
 	    </p>
+           <p class="text-center">
+            <a class="btn btn-lg btn-info" href="#">
+                <i class="fa fa-star-o pull-left fa-border"></i>
+                <span>Get tickets!</span>
+            </a>
+        </p>
 	  </div>
+        </div>
 	</div>
     </section>
 
@@ -96,14 +104,14 @@
      <section id="speakers">
       <div class="container">
         <h2 class="thin title">The speakers</h2>
-
+          <div class="row">
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle" src="http://placekitten.com/g/200/200" alt="React Speakers">
+            <img class="img-circle img-circle-re" src="http://placekitten.com/g/200/200" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#martin">Martin Thompson</h4><h4 class="media-sub">High-Performance &amp; low-latency computing specialist</h4>
+              <h4 class="media-heading media-heading-speaker" data-toggle="collapse" data-target="#martin">Martin Thompson</h4><h4 class="media-sub">High-Performance &amp; low-latency computing specialist</h4>
               <div id="martin" class="collapse">
                  <p>
                  Martin is a high-performance and low-latency specialist, with experience gained over two decades working on the bleeding edge of large transactional and big-data systems. He believes in Mechanical Sympathy, i.e. applying an understanding of the hardware to the creation of software as being fundamental to delivering elegant high-performance solutions. The Disruptor framework is just one example of what his mechanical sympathy has created.
@@ -111,15 +119,15 @@
                 <p>
                 Martin was the co-founder and CTO of LMAX. He blogs at mechanical-sympathy.blogspot.com, and can be found giving training courses on performance and concurrency when he is not cutting code to make systems better.
                 </p>
-              </div>
             </div>
           </div>
         </div>
+              </div>
 
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle" src="http://placekitten.com/g/200/200" alt="React Speakers">
+            <img class="img-circle img-circle-re" src="http://placekitten.com/g/200/200" alt="React Speakers">
                   </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#jonas">Jonas Bonér</h4><h4 class="media-sub">Inventor of Akka.  Co-founder &amp; CTO Typesafe</h4>
@@ -136,7 +144,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle" src="" alt="React Speakers">
+            <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#leslie">Leslie Lamport</h4>
@@ -162,7 +170,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle" src="" alt="React Speakers">
+            <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#pat">Pat Helland</h4>
@@ -193,7 +201,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle" src="" alt="React Speakers">
+            <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#gil">Gil Tene</h4>
@@ -210,7 +218,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle" src="" alt="React Speakers">
+            <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#benh">Ben Hindman</h4>
@@ -229,7 +237,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
              <a class="media-left" href="#">
-              <img class="img-circle" src="" alt="React Speakers">
+              <img class="img-circle img-circle-re" src="" alt="React Speakers">
             </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#benc">Ben Christensen</h4>
@@ -247,7 +255,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle" src="" alt="React Speakers">
+            <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#dean">Dean Wampler</h4>
@@ -266,7 +274,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle" src="" alt="React Speakers">
+            <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#lee">Lee Campbell</h4>
@@ -290,7 +298,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
             <a class="media-left" href="#">
-              <img class="img-circle" src="" alt="React Speakers">
+              <img class="img-circle img-circle-re" src="" alt="React Speakers">
             </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#matt">Matt Barrett</h4>
@@ -309,7 +317,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle" src="" alt="React Speakers">
+            <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#andrew">Andrew Stewart</h4>
@@ -325,7 +333,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle" src="" alt="React Speakers">
+            <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#andy">Andy Piper</h4>
@@ -344,7 +352,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle" src="" alt="React Speakers">
+            <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#todd">Todd L. Montgomery</h4>
@@ -361,7 +369,7 @@
         <div class="col-lg-6 speaker">
           <div class="media">
               <a class="media-left" href="#">
-            <img class="img-circle pull-left" src="" alt="React Speakers">
+            <img class="img-circle img-circle-re pull-left" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
               <h4 class="media-heading" data-toggle="collapse" data-target="#nitesh">Nitesh Kant</h4>
@@ -395,7 +403,7 @@
                     </a>
                     <br>
                </p>
-               <a href="#" target="_blank">Practical information</a>
+               <a type=button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Practical information</a>
            </div>
 </section>
       
@@ -639,7 +647,7 @@
 <div class="panel panel-default">
   <!-- Default panel contents -->
   <div class="panel-heading">
-     <table class="table table-bordered schedule-table">
+     <table class="table table-re table-bordered schedule-table">
     <thead>
         <tr>
             <th></th>
@@ -772,22 +780,91 @@
          
   </table>
     </div>
-  
-  
-</div>
-
-
+  </div>
 </div>
           </section>
 
-    
+     <section id="sponsors">
+         <div class="container">
+             <h4>thanks to our sponsors!</h4>
+             <h2 class="thin title">Patner Logos</h2>
+             <div class="row">
+             <div class="col-sm-12"> 
+           <div class="row platinum">
+             <h3>Platinum</h3>
+             <div class="col-sm-4 col-sm-offset-2"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="Nitro"></a></div>
+             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Typesafe"></a></div>
+           </div>
+           <div class="row gold">
+             <h3>Gold</h3>
+             <div class="col-sm-4 col-sm-offset-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Paypal"></a></div>
+           </div>
+           <div class="row silver">                
+             <h3>Silver</h3>
+             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="BoldRadius"></a></div>
+             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="Adaptive"></a></div>
+             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Azul"></a></div>
+           </div>
+           <div class="row silver">                
+             <div class="col-sm-4 col-sm-offset-4"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="TicketFly"></a></div>
+           </div>
+           <div class="row bronze">
+             <h3>Bronze</h3>
+             <div class="col-sm-4 col-sm-offset-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Nilenso"></a></div>
+           </div>
+           <div class="row media">                
+             <h3>Media Partners</h3>
+             <div class="col-sm-4 col-sm-offset-2"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="InfoQ"></a></div>
+             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="OReilly"></a></div>
+           </div>
+            <div class="row supporters">                
+             <h3>Supporters</h3>
+             <div class="col-sm-4 col-sm-offset-2"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="InfoQ"></a></div>
+             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="OReilly"></a></div>
+           </div>
+           <p>Want to get involved and help support React?  We'd love to hear from you.</p>
+        <div class="btn-wrapper">
+	   <a class="btn btn-info orange-btn" href="#">Contact Us</a>
+        </div>
+        </div>
+        </div>
+             </div>
+ </section>
       
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+<div id="footer">
+      <div class="container">
+          <div class="code-re">
+            <a href="http://confcodeofconduct.com/"><span>Code of Conduct</span></a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><span class="fa fa-google-plus-square fa-lg"></span></a>
+                <a href="#"><span class="fa fa-twitter-square fa-lg"></span></a>
+                <a href="#" title=""><span class="fa fa-facebook-square fa-lg"></span></a>
+			</div>
       </div>
     </div>
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -801,7 +878,6 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -823,5 +899,6 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
+
 </body>
 </html>
