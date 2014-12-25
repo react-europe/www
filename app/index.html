@@ -35,8 +35,8 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-          <span class="blue-under">React-europe</span>
-          <span>2015</span>
+          <span><img src="images/reacteurope.png" height="20" alt="React Europe navbar"></span>
+          <span style="color:#3498db;">2015</span>
         </a>
     </div>
 
@@ -46,9 +46,9 @@
         <li class="active-re"><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
+         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#getting-there">Getting There</a></li>
-        <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#">Lightning Talks</a></li>
         </ul>
 
@@ -62,13 +62,14 @@
       <section class="jumbotron">
               <div class="container-logo">
                   <div class="row row-re">
-                      <div class="col-lg-8 col-lg-offset-2 brand">
+                      <div class="col-lg-4 col-lg-offset-4 brand">
                     <div id="text-re">
-                    <strong>React Europe</strong>
+                        React Europe
                     </div>
                   <div id="minitext-re">
-                      July 02 &amp; 03 — Paris, France
+                      July 02 &amp; 03 — PARIS, FRANCE
                   </div>
+                </div>
                 </div>
                      </div>
             </div>
@@ -89,12 +90,12 @@
 	    <p>
 	      Think of React as a learning event, one that actively encourages you to engage and interact with some of the foremost thinkers in reactive system design, all wrapped up in a <a href="#">small and intimate setting</a>.  If you are in any way interested in or involved with building <strong>distributed</strong>, <strong>responsive</strong>, <strong>resilient</strong>, <strong>elastic</strong> systems then React is the event for you.
 	    </p>
-           <p class="text-center">
-            <a class="btn btn-lg btn-info" href="#">
-                <i class="fa fa-star-o pull-left fa-border"></i>
-                <span>Get tickets!</span>
-            </a>
-        </p>
+          <div class="text-center wrapper-btn">
+            <a class="btn btn-re btn-warning btn-lg active" href="#" role="button">
+               <i class="fa fa-star-o"></i>
+                Get tickets
+              </a>
+        </div>
 	  </div>
         </div>
 	</div>
@@ -388,27 +389,7 @@
       </div>
     </section>
       
-       <section id="getting-there">
-           <h2 class="thin title">Getting There</h2>
-                <img src="images/map2.png" width="100%">
-           <div id="map-dialog">
-           <img class="img-responsive" src="images/logo.jpg" alt="Espace Charenton">
-                <p id="location-address">
-                    <a href="https://www.google.com/maps/place/Espace+Charenton/@48.832651,2.396575,17z/data=!3m1!4b1!4m2!3m1!1s0x47e67242e2b4a6a5:0xff70319942e6fc13" target="_blank">
-                        <strong>Espace Charenton</strong> 
-                        <br>
-                        327, rue de Charenton
-                        <br>
-                        75012 Paris
-                    </a>
-                    <br>
-               </p>
-               <a type=button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Practical information</a>
-           </div>
-</section>
-      
-      
-      <section id="schedule">
+         <section id="schedule">
           <div class="container">
             <h2 class="thin title">The Schedule</h2>
               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -784,6 +765,27 @@
 </div>
           </section>
 
+
+<section id="getting-there">
+           <h2 class="thin title">Getting There</h2>
+                <img src="images/map2.png" width="100%">
+           <div id="map-dialog">
+           <img class="img-responsive" src="images/logo.jpg" alt="Espace Charenton">
+                <p id="location-address">
+                    <a href="https://www.google.com/maps/place/Espace+Charenton/@48.832651,2.396575,17z/data=!3m1!4b1!4m2!3m1!1s0x47e67242e2b4a6a5:0xff70319942e6fc13" target="_blank">
+                        <strong>Espace Charenton</strong> 
+                        <br>
+                        327, rue de Charenton
+                        <br>
+                        75012 Paris
+                    </a>
+                    <br>
+               </p>
+               <a type=button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Practical information</a>
+           </div>
+</section>
+
+
      <section id="sponsors">
          <div class="container">
              <h4>thanks to our sponsors!</h4>
@@ -823,8 +825,8 @@
              <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="OReilly"></a></div>
            </div>
            <p>Want to get involved and help support React?  We'd love to hear from you.</p>
-        <div class="btn-wrapper">
-	   <a class="btn btn-info orange-btn" href="#">Contact Us</a>
+        <div class="text-center wrapper-btn">
+            <a class="btn btn-warning btn-lg active btn-re" href="#" role="button">Contact Us</a>
         </div>
         </div>
         </div>
@@ -832,18 +834,22 @@
  </section>
       
 
-<div id="footer">
+<section id="footer">
       <div class="container">
-          <div class="code-re">
-            <a href="http://confcodeofconduct.com/"><span>Code of Conduct</span></a>
-            </div>
+          <div class="row ">
+            <div class="col-lg-12 col-re">
+                <div class="code-re">
+                    <a href="http://confcodeofconduct.com/"><span>Code of Conduct</span></a>
+                </div>
             <div class="footer-social">
-                <a href="#"><span class="fa fa-google-plus-square fa-lg"></span></a>
-                <a href="#"><span class="fa fa-twitter-square fa-lg"></span></a>
-                <a href="#" title=""><span class="fa fa-facebook-square fa-lg"></span></a>
+                <a href="#"><span class="fa fa-google-plus-square fa-2x"></span></a>
+                <a href="#"><span class="fa fa-twitter-square fa-2x"></span></a>
+                <a href="#" title=""><span class="fa fa-facebook-square fa-2x"></span></a>
 			</div>
       </div>
     </div>
+</div>
+    </section>
 
 
 
