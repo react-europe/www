@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">      
     <title>react europe</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
       <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700' rel='stylesheet' type='text/css'>
@@ -23,7 +23,6 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<div id="wrap">
    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,13 +42,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="navbar-collapse collapse" >
       <ul class="nav navbar-nav ">
-        <li class="active-re"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li class="active-re"><a href="#about">About</a></li>
         <li><a href="#speakers">Speakers</a></li>
          <li><a href="#schedule">Schedule</a></li>
         <li><a href="#getting-there">Getting There</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#">Lightning Talks</a></li>
         </ul>
 
       <ul class="nav navbar-nav navbar-right">
@@ -59,20 +56,19 @@
   </div><!-- /.container -->
 </nav>
 
-      <section class="jumbotron">
-              <div class="container-logo">
-                  <div class="row row-re">
-                      <div class="col-lg-4 col-lg-offset-4 brand">
-                    <div id="text-re">
-                        React Europe
+      <section id="home">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-5 col-sm-offset-2  col-xs-5 col-xs-offset-2" id="text-react">
+                        <p id="name-react">React Europe</p>
+                        <p id="date-react" class="visible-sm-block visible-md-block visible-lg-block">July 02 &amp; 03 — PARIS, FRANCE</p>
+                        <p id="date-react" class="visible-xs-block">July 02 &amp; 03 <span id="city">PARIS, FRANCE</span></p>
                     </div>
-                  <div id="minitext-re">
-                      July 02 &amp; 03 — PARIS, FRANCE
-                  </div>
+                    <div class="col-lg-5 col-xs-5 col-sm-5" id="logo-react">
+                        <img class="" src="images/reacteurope.png" alt="React Europe" width="300" height="300">
                 </div>
                 </div>
                      </div>
-            </div>
             
       </section>
 
@@ -80,7 +76,6 @@
       <section id="about">
 	<div class="container">
     <div class="row">
-	  <div class="col-lg-12">
 	    <h2 class="title thin">About React</h2>
 	    <p>
 	      Building large-scale applications or systems? If so, then React is the conference for you.
@@ -92,10 +87,9 @@
 	    </p>
           <div class="text-center wrapper-btn">
             <a class="btn btn-re btn-warning btn-lg active" href="#" role="button">
-               <i class="fa fa-star-o"></i>
+               <i class="fa fa-star"></i>
                 Get tickets
               </a>
-        </div>
 	  </div>
         </div>
 	</div>
@@ -400,7 +394,7 @@
             <span class="fa fa-calendar"></span>
             <span class="calendar-day">Day 1</span>
             <small> - Wednesday 1st July</small>
-            <span class="fa fa-plus-circle pull-right fa-border"></span>
+            <span class="fa fa-plus-circle pull-right"></span>
           </a>
       </h4>
     </div>
@@ -418,7 +412,7 @@
             <span class="fa fa-calendar"></span>
             <span class="calendar-day">Day 2</span>
             <small> - Thursday 2nd July</small>
-            <span class="fa fa-plus-circle pull-right fa-border"></span>
+            <span class="fa fa-plus-circle pull-right"></span>
         </a>
       </h4>
     </div>
@@ -541,7 +535,7 @@
             <span class="fa fa-calendar"></span>
             <span class="calendar-day">Day 3</span>
             <small> - Friday 3rd July</small>
-            <span class="fa fa-plus-circle pull-right fa-border"></span>
+            <span class="fa fa-plus-circle pull-right"></span>
         </a>
       </h4>
     </div>
@@ -638,7 +632,7 @@
     </thead>
     <tbody>
         <tr class="special">
-            <td>9:00-10:00</td>
+            <td>9:00-10:00am</td>
             <td>Registration</td>
             <td></td>
         </tr>
@@ -767,8 +761,11 @@
 
 
 <section id="getting-there">
+    <div class="row">
            <h2 class="thin title">Getting There</h2>
+            <a href="https://www.google.com/maps/place/Espace+Charenton/@48.832651,2.396575,17z/data=!3m1!4b1!4m2!3m1!1s0x47e67242e2b4a6a5:0xff70319942e6fc13" target="_blank">
                 <img src="images/map2.png" width="100%">
+                </a>
            <div id="map-dialog">
            <img class="img-responsive" src="images/logo.jpg" alt="Espace Charenton">
                 <p id="location-address">
@@ -782,7 +779,9 @@
                     <br>
                </p>
                <a type=button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Practical information</a>
-           </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -791,53 +790,50 @@
              <h4>thanks to our sponsors!</h4>
              <h2 class="thin title">Patner Logos</h2>
              <div class="row">
-             <div class="col-sm-12"> 
            <div class="row platinum">
              <h3>Platinum</h3>
-             <div class="col-sm-4 col-sm-offset-2"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="Nitro"></a></div>
-             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Typesafe"></a></div>
+             <div class="col-lg-4 col-lg-offset-2 col-xs-12"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="Nitro"></a></div>
+             <div class="col-lg-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Typesafe"></a></div>
            </div>
            <div class="row gold">
              <h3>Gold</h3>
-             <div class="col-sm-4 col-sm-offset-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Paypal"></a></div>
+             <div class="col-lg-4 col-lg-offset-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Paypal"></a></div>
            </div>
            <div class="row silver">                
              <h3>Silver</h3>
-             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="BoldRadius"></a></div>
-             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="Adaptive"></a></div>
-             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Azul"></a></div>
+             <div class="col-lg-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="BoldRadius"></a></div>
+             <div class="col-lg-4"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="Adaptive"></a></div>
+             <div class="col-lg-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Azul"></a></div>
            </div>
            <div class="row silver">                
-             <div class="col-sm-4 col-sm-offset-4"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="TicketFly"></a></div>
+             <div class="col-lg-4 col-lg-offset-4"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="TicketFly"></a></div>
            </div>
            <div class="row bronze">
              <h3>Bronze</h3>
-             <div class="col-sm-4 col-sm-offset-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Nilenso"></a></div>
+             <div class="col-lg-4 col-lg-offset-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="Nilenso"></a></div>
            </div>
            <div class="row media">                
              <h3>Media Partners</h3>
-             <div class="col-sm-4 col-sm-offset-2"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="InfoQ"></a></div>
-             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="OReilly"></a></div>
+             <div class="col-lg-4 col-lg-offset-2"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="InfoQ"></a></div>
+             <div class="col-lg-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="OReilly"></a></div>
            </div>
             <div class="row supporters">                
              <h3>Supporters</h3>
-             <div class="col-sm-4 col-sm-offset-2"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="InfoQ"></a></div>
-             <div class="col-sm-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="OReilly"></a></div>
+             <div class="col-lg-4 col-lg-offset-2"><a target="sponsor" href="#"><img src="http://goo.gl/1aRb3x" alt="InfoQ"></a></div>
+             <div class="col-lg-4"><a target="sponsor" href="#"><img src="http://goo.gl/5wHXsC" alt="OReilly"></a></div>
            </div>
            <p>Want to get involved and help support React?  We'd love to hear from you.</p>
         <div class="text-center wrapper-btn">
             <a class="btn btn-warning btn-lg active btn-re" href="#" role="button">Contact Us</a>
         </div>
         </div>
-        </div>
              </div>
  </section>
       
 
-<section id="footer">
+<footer>
       <div class="container">
           <div class="row ">
-            <div class="col-lg-12 col-re">
                 <div class="code-re">
                     <a href="http://confcodeofconduct.com/"><span>Code of Conduct</span></a>
                 </div>
@@ -846,10 +842,9 @@
                 <a href="#"><span class="fa fa-twitter-square fa-2x"></span></a>
                 <a href="#" title=""><span class="fa fa-facebook-square fa-2x"></span></a>
 			</div>
-      </div>
     </div>
 </div>
-    </section>
+    </footer>
 
 
 
