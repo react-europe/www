@@ -5,16 +5,21 @@ font-family: 'Alegreya Sans', sans-serif;
     overflow-x: hidden;
 }
 
-li.active-re a { 
+li.active a { 
     color: #3498db !important; 
 }
 
 .navbar-brand {
 font-size: 23px;
+color: #3498db !important;
 }
 
-a.navbar-brand:hover {
-     color: #3498db !important;    
+.navbar-tickets {
+color:#3498db !important;
+}
+
+.navbar-right a:hover {
+    background-color: #FFFFFF !important;
 }
 
 section#home {
@@ -42,11 +47,11 @@ font-size: 18px;
     text-align: right;
 }
 #home #text-react {
-margin-top: 80px;
+margin-top: 55px;
 }
     #map-dialog{
    position: absolute;
-top: 225px;
+top: 235px;
 background: #FFF;
 padding: 25px;
 }
@@ -102,6 +107,9 @@ text-align: center;
 @media (max-width: 767px) {
     #home {
 margin-top: 0px;
+}
+    h2.title {
+font-size: 30px;
 }
        
 }
@@ -215,7 +223,7 @@ font-weight: 300;
 }
 
 section#about>div {
-font-size: 22px;
+font-size: 20px;
 }
 
 .btn-re {   
@@ -241,12 +249,15 @@ section#speakers {
     background-color: #f0f0f0;
 }
 
+#speakers .speaker-img {
+cursor: pointer;
+}
+
 .speaker {
-    min-height: 130px;
+    margin-bottom: 20px;
 }
 
 .media-heading {
-font-size: 26px;
 margin: 0px 0px 5px;
 font-weight: bolder;
 }
@@ -325,7 +336,11 @@ margin-top: 12px;
 text-decoration: none;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+h2.title {
+font-size: 39px;
+font-size: 39px;
+}
 .media-left-re { 
     width: 150px;
     padding: 15px;

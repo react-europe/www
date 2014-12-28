@@ -19,7 +19,7 @@
     <!-- endbuild -->
 
   </head>
-  <body>
+  <body  data-spy="scroll" data-target=".navbar">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -34,8 +34,11 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-          <span><img src="images/reacteurope.png" height="20" alt="React Europe navbar"></span>
-          <span style="color:#3498db;">React Europe 2015</span>
+          <span>
+              <img src="images/reacteurope.png" height="20" alt="React Europe navbar">              </span>
+          <span>
+              React Europe 2015
+          </span>
         </a>
     </div>
 
@@ -51,7 +54,9 @@
         </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li class="active-re"><a href="#">Buy Tickets »</a></li>
+        <li class="active-re">
+            <a class="navbar-tickets" href="#">Buy Tickets »</a>
+          </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
@@ -103,11 +108,11 @@
           <div class="row">
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
-            <img class="img-circle img-circle-re" src="http://placekitten.com/g/200/200" alt="React Speakers">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#martin">
+            <img class="img-circle img-circle-re" src="images/sillhouette.jpg" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading media-heading-speaker" data-toggle="collapse" data-target="#martin">Martin Thompson</h4><h4 class="media-sub">High-Performance &amp; low-latency computing specialist</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#martin">Martin Thompson</h3><h4 class="media-sub">High-Performance &amp; low-latency computing specialist</h4>
               <div id="martin" class="collapse">
                  <p>
                  Martin is a high-performance and low-latency specialist, with experience gained over two decades working on the bleeding edge of large transactional and big-data systems. He believes in Mechanical Sympathy, i.e. applying an understanding of the hardware to the creation of software as being fundamental to delivering elegant high-performance solutions. The Disruptor framework is just one example of what his mechanical sympathy has created.
@@ -122,11 +127,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#jonas">
             <img class="img-circle img-circle-re" src="http://placekitten.com/g/200/200" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#jonas">Jonas Bonér</h4><h4 class="media-sub">Inventor of Akka.  Co-founder &amp; CTO Typesafe</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#jonas">Jonas Bonér</h3><h4 class="media-sub">Inventor of Akka.  Co-founder &amp; CTO Typesafe</h4>
               <div id="jonas" class="collapse">
                   <p>Jonas Bonér is a programmer, speaker, writer, Java Champion and entrepreneur. He is the co-founder and CTO of Typesafe and is an active contributor to the open source community; most notably started the Akka project and the AspectWerkz AOP runtime (now AspectJ). Learn more at: <a href="http://jonasboner.com" target="_blank">http://jonasboner.com</a>
                       </p>
@@ -139,11 +144,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#leslie">
             <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#leslie">Leslie Lamport</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#leslie">Leslie Lamport</h3>
               <h4 class="media-sub">2013 Turing Award winner &amp; Principle Researcher at Microsoft Research.</h4>
               <div id="leslie" class="collapse">
                 <p>
@@ -165,11 +170,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
+              <a class="media-left speaker-img" href="#">
             <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#pat">Pat Helland</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#pat">Pat Helland</h3>
               <h4 class="media-sub">Distributed systems and database visionary. Salesforce Software Architect.</h4>
               <div id="pat" class="collapse">
                  <p>
@@ -196,11 +201,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#gil">
             <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#gil">Gil Tene</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#gil">Gil Tene</h3>
               <h4 class="media-sub">JVM pioneer. Founder of Azul Systems</h4>
               <div id="gil" class="collapse">
                  <p>
@@ -213,11 +218,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#benh">
             <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#benh">Ben Hindman</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#benh">Ben Hindman</h3>
               <h4 class="media-sub">Co-Creator, Apache Mesos. Hacker at Twitter.</h4>
               <div id="benh" class="collapse">
                   <p>
@@ -232,11 +237,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-             <a class="media-left" href="#">
+             <a class="media-left speaker-img" data-toggle="collapse" data-target="#benc">
               <img class="img-circle img-circle-re" src="" alt="React Speakers">
             </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#benc">Ben Christensen</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#benc">Ben Christensen</h3>
               <h4 class="media-sub">Software Engineer on Netflix Edge Engineering Team.</h4>
               <div id="benc" class="collapse">
                 <p>
@@ -250,11 +255,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#dean">
             <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#dean">Dean Wampler</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#dean">Dean Wampler</h3>
               <h4 class="media-sub">Distributed computing specialist. Typesafe consultant.</h4>
               <div id="dean" class="collapse">
                  <p>
@@ -269,11 +274,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#lee">
             <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#lee">Lee Campbell</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#lee">Lee Campbell</h3>
               <h4 class="media-sub">Author and Rx expert. Developer at Adaptive</h4>
               <div id="lee" class="collapse">
                  <p>
@@ -293,11 +298,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-            <a class="media-left" href="#">
+            <a class="media-left speaker-img" data-toggle="collapse" data-target="#matt">
               <img class="img-circle img-circle-re" src="" alt="React Speakers">
             </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#matt">Matt Barrett</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#matt">Matt Barrett</h3>
               <h4 class="media-sub">Builder of real time systems.  Co-Founder of Adaptive</h4>
               <div id="matt" class="collapse">
                 <p>
@@ -312,12 +317,12 @@
           
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#andrew">
             <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#andrew">Andrew Stewart</h4>
-              <h4 class="media-sub">High performance specialist. Head of Analysis at LMAX Exchange</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#andrew">Andrew Stewart</h3>
+              <h4 class="media-sub">High performance specialist</h4>
               <div id="andrew" class="collapse">
                   <p>Andrew Stewart currently leads the business analysis team at LMAX, and has spent more than 20 years working in software development in organisations ranging from 3-strong start-ups to global consultancy firms and on engagements spanning banking, insurance, pharmaceuticals, utilities, oil &amp; gas, telecommunications, gambling and most recently foreign exchange trading systems. The bulk of his experience is in the data, modelling and MI space, specialising in high volume, high performance and inevitably high technology risk projects.
                       </p>
@@ -328,11 +333,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#andy">
             <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#andy">Andy Piper</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#andy">Andy Piper</h3>
               <h4 class="media-sub">CTO Push Technology</h4>
               <div id="andy" class="collapse">
                   <p>
@@ -347,11 +352,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#todd">
             <img class="img-circle img-circle-re" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#todd">Todd L. Montgomery</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#todd">Todd L. Montgomery</h3>
               <h4 class="media-sub">Messaging middleware creator. Ex-NASA researcher and network geek.</h4>
               <div id="todd" class="collapse">
                   <p>
@@ -364,11 +369,11 @@
 
         <div class="col-lg-6 speaker">
           <div class="media">
-              <a class="media-left" href="#">
+              <a class="media-left speaker-img" data-toggle="collapse" data-target="#nitesh">
             <img class="img-circle img-circle-re pull-left" src="" alt="React Speakers">
                   </a>
             <div class="media-body">
-              <h4 class="media-heading" data-toggle="collapse" data-target="#nitesh">Nitesh Kant</h4>
+              <h3 class="media-heading" data-toggle="collapse" data-target="#nitesh">Nitesh Kant</h3>
               <h4 class="media-sub">Author of RxNetty. Works on Netflix's cloud platform team.</h4>
               <div id="nitesh" class="collapse">
                 <p>
@@ -432,7 +437,7 @@
                       </div>
             </div>
            <div class="media-body media-right">
-            <h4 class="media-heading media-heading-re">Media heading</h4>
+            <h3 class="media-heading media-heading-re">Media heading</h3>
     <p>
        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
         </p>
@@ -462,7 +467,7 @@
                       </div>
             </div>
            <div class="media-body media-right">
-            <h4 class="media-heading media-heading-re">Media heading</h4>
+            <h3 class="media-heading media-heading-re">Media heading</h3>
     <p>
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
         </p>
@@ -493,7 +498,7 @@
                       </div>
             </div>
            <div class="media-body media-right">
-            <h4 class="media-heading media-heading-re">Media heading</h4>
+            <h3 class="media-heading media-heading-re">Media heading</h3>
     <p>
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
         </p>
@@ -541,7 +546,7 @@
                       </div>
             </div>
            <div class="media-body media-right">
-            <h4 class="media-heading media-heading-re">Media heading</h4>
+            <h3 class="media-heading media-heading-re">Media heading</h3>
     <p>
        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
         </p>
@@ -571,7 +576,7 @@
                       </div>
             </div>
            <div class="media-body media-right">
-            <h4 class="media-heading media-heading-re">Media heading</h4>
+            <h3 class="media-heading media-heading-re">Media heading</h3>
     <p>
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
         </p>
@@ -755,7 +760,7 @@
                     </a>
                     <br>
                </p>
-               <a type=button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Practical information</a>
+               <a type=button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Hotels</a>
             </div>
         </div>
     </div>
@@ -831,14 +836,101 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">We have hotels'options for you:</h4>
       </div>
       <div class="modal-body">
-        ...
-      </div>
+          
+          <strong> Closer to the venue:</strong>
+          <ul>
+          <li>
+          <a data-toggle="collapse" data-parent="#hotels-accordion" href="#collapseHotelOne1" aria-expanded="true" aria-controls="collapseOne1">Adagio Access Paris Porte De Charenton</a>
+              </li>
+    <div id="collapseHotelOne1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hotelOne1">
+    <a href="http://www.adagio-city.com/fr/hotel-8365-aparthotel-adagio-access-paris-porte-de-charenton/index.shtml" target="_blank">203 Rue De Paris<br>
+    94220 Charenton-le-Pont</a><br>
+    Tél : 33(0) 1 58 73 64 00
+    </div>
+          <li>
+        <a data-toggle="collapse" data-parent="#hotels-accordion" href="#collapseHotelOne2" aria-expanded="false" aria-controls="collapseOne2">
+    Novotel Paris Charenton</a>
+              </li>
+              </ul>
+    <div id="collapseHotelOne2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hotelOne2">
+    <a href="http://www.novotel.com/fr/hotel-1549-novotel-paris-charenton/index.shtml" target="_blank">3-5 place des Marseillais<br>
+    94227 Charenton-Le-Pont</a><br>
+    Tél : 33(0) 1 46 76 60 60
+          </div>
+         <strong>Small and friendly hotel: </strong>
+          <ul>
+          <li>
+          <a data-toggle="collapse" data-parent="#hotels-accordion" href="#collapseHotelTwo1" aria-expanded="true" aria-controls="collapseTwo1">Grand Hotel Doré</a>
+              </li>
+        <div id="collapseHotelTwo1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hotelTwo1">
+          <a href="http://www.grand-hotel-dore.com/fr/?r=3710516&gclid=Cj0KEQiAzvmkBRCm3ZbV-4-hwrYBEiQAgLOw6x1sjuY109voE-5qJz1ohoQW9ASHearJpaCeOmFh7PAaAke68P8HAQ" target="_blank"> 201 Avenue Daumesnil<br>
+          75012 Paris</a><br>
+          Tél : 33(0) 1 43 43 66 89 
+           </div>
+          <li>
+          <a data-toggle="collapse" data-parent="#hotels-accordion" href="#collapseHotelTwo2" aria-expanded="true" aria-controls="collapseTwo2">Le Quartier Bercy-Square</a>
+              </li>
+          <div id="collapseHotelTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hotelTwo2">
+            <a href="http://www.lequartierhotelbs.com/" target="_blank">33, Boulevard de Reuilly<br>
+            75012 Paris</a><br>
+             Tél : 33(0) 1 44 87 09 09<br><br>
+            </div>
+        </ul>
+<strong>Value for money:</strong>
+          <ul>
+          <li>
+          <a data-toggle="collapse" data-parent="#hotels-accordion" href="#collapseHotelThree1" aria-expanded="true" aria-controls="collapseThree1">Pullman Paris Bercy</a>
+              </li>
+          <div id="collapseHotelThree1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hotelThree1">
+             <a href="http://www.pullmanhotels.com/fr/hotel-2192-pullman-paris-centre-bercy/index.shtml" target="_blank">1 rue de Libourne<br>
+            75012 Paris</a><br>
+            Tél : 33(0) 1 44 67 34 01
+            </div>
+          <li>
+          <a data-toggle="collapse" data-parent="#hotels-accordion" href="#collapseHotelThree2" aria-expanded="true" aria-controls="collapseThree2">Mercure Paris Gare de Lyon</a>
+              </li>
+          <div id="collapseHotelThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hotelThree2">
+            <a href="http://www.mercure.com/gb/hotel-2217-mercure-paris-gare-de-lyon-hotel/index.shtml" target="_blank">2, PLace Louis Armand<br>
+            75012 Paris</a><br>
+            Tél : 33(0) 1 43 47 41 94
+        </div>
+          <li>
+          <a data-toggle="collapse" data-parent="#hotels-accordion" href="#collapseHotelThree3" aria-expanded="true" aria-controls="collapseThree3">Ibis Styles Paris Bercy</a>
+              </li>
+          <div id="collapseHotelThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hotelThree3">
+        <a href="http://www.ibis.com/fr/hotel-0941-ibis-styles-paris-bercy/index.shtml" target="_blank">
+        77, rue de Bercy<br>
+        75012 Paris</a><br>
+        Tél : 33(0) 1 53 46 50 50
+           </div>
+          <li>
+<a data-toggle="collapse" data-parent="#hotels-accordion" href="#collapseHotelThree4" aria-expanded="true" aria-controls="collapseThree4">Kyriad Paris Bercy Village</a>
+              </li>
+       <div id="collapseHotelThree4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hotelThree4">
+        <a href="http://www.bercykyriad.fr/" target="_blank">17 rue Baron le Roy<br>
+        75012 Paris</a><br>
+        Tél : 33(0) 1 44 67 75 75
+    </div>
+          <li>
+        <a data-toggle="collapse" data-parent="#hotels-accordion" href="#collapseHotelThree5" aria-expanded="true" aria-controls="collapseThree5">Ibis Daumesnil Porte Dorée</a>
+              </li>
+          <div id="collapseHotelThree5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="hotelThree5">
+        <a href="http://ibis-daumesnil-paris.h-rez.com/index.htm?lbl=ggl-en&gclid=Cj0KEQiAzvmkBRCm3ZbV-4-hwrYBEiQAgLOw6-abfsJh4e375CvMB6xm2LOq0-fVkG9SKVv1dvFVjCYaAoKO8P8HAQ" target="_blank">111 boulevard Poniatowski<br>
+        75012 Paris</a><br>
+        Tél : 33(0) 1 43 43 30 38
+        </div>
+              </ul>
+          
+          <h4>
+            <a href="https://www.airbnb.com/s/Avenue-de-la-Porte-de-Charenton--Paris--France?source=bb" target="_blank">Airbnb</a>
+            </h4>
+</div>
+        
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
