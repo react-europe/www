@@ -47,7 +47,7 @@ font-size: 18px;
     text-align: right;
 }
 #home #text-react {
-margin-top: 55px;
+margin-top: 80px;
 }
     #map-dialog{
    position: absolute;
@@ -249,9 +249,9 @@ section#speakers {
     background-color: #f0f0f0;
 }
 
-#speakers .speaker-img {
+/*#speakers .speaker-img {
 cursor: pointer;
-}
+}*/
 
 .speaker {
     margin-bottom: 20px;
@@ -262,9 +262,9 @@ margin: 0px 0px 5px;
 font-weight: bolder;
 }
 
-.media-heading:hover {
+/*.media-heading:hover {
 cursor: pointer;
-}
+}*/
 
 .media-sub {
 margin: 0px;
