@@ -512,7 +512,10 @@ float:right;
 margin-right: 10px;
 }
 
-
+.ticket-modal {
+    width: 700px;
+    text-align: center;
+}
 
 
 

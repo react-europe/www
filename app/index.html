@@ -52,9 +52,9 @@
           <li><a href="#sponsors">Sponsors</a></li>
         </ul>
 
-      <ul class="nav navbar-nav navbar-right hidden">
+      <ul class="nav navbar-nav navbar-right">
         <li class="active-re">
-            <a class="navbar-tickets" href="#">Buy Tickets »</a>
+            <a class="navbar-tickets" href="#" data-toggle="modal" data-target="#ticketModal">Buy Tickets »</a>
           </li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -89,10 +89,11 @@
             </div>
               <div class="clearfix"></div>
 
-          <div class="text-center wrapper-btn hidden">
-            <a class="btn btn-re btn-warning btn-lg active" href="#" role="button">
+          <div class="text-center wrapper-btn">
+            <a class="btn btn-re btn-warning btn-lg active" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
                <i class="fa fa-star"></i>
-                Get tickets
+Get notified about tickets selling date and schedule.
+
               </a>
 	  </div>
         </div>
@@ -303,7 +304,23 @@
     </footer>
 
 
-
+<!-- Modal -->
+<div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ticket-modal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="ticketModalLabel">Get tickets</h4>
+      </div>
+      <div class="modal-body">
+<iframe src="https://docs.google.com/forms/d/186_VUzeJ63IJZFcXyiThB5WkAj6UymxGo-1bzxTDITs/viewform?embedded=true" width="600" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
