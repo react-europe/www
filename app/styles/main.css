@@ -111,6 +111,14 @@ margin-top: 0px;
     h2.title {
 font-size: 30px;
 }
+    
+h3.media-heading {
+font-size: 22px;
+}
+
+h4.title {
+font-size: 15px;
+}
        
 }
 @media (max-width: 768px) {
