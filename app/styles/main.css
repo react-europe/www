@@ -69,8 +69,11 @@ padding: 25px;
 }
 }
 @media (max-width: 992px) {
+ .row {
+  margin-left: 0px;
+    margin-right: 0px;
+}   
 #home {
-margin-top: 80px;
 }
 #text-react{
     padding-top: 25px;
@@ -221,6 +224,12 @@ font-size: 15px;
     margin: 15px 0px 0px 5px;
 }
 
+}
+
+@media (min-width: 559px) and (max-width: 562px) {
+#home {
+margin-top: -100px !important;
+}
 }
 
 #about a {
