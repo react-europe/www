@@ -34,6 +34,12 @@ padding-top: 50px;
 }
 
 @media (min-width: 992px) {
+
+.row {
+  margin-left: 0px;
+    margin-right: 0px;
+}
+
 #home #name-react  {
 font-size: 71px;
 color: #FFFFFF;
@@ -527,20 +533,6 @@ float:right;
 margin-right: 10px;
 }
 
-
-
-.row {
-  margin-left: 0px;
-    margin-right: 0px;
+.venue-logo {
+    height:40px;
 }
-
-
-
-
-
-
-
-
-
-
-
