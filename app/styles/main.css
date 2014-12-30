@@ -549,3 +549,6 @@ border: 1px solid rgb(224, 126, 36);
 text-decoration: none;
 }
 
+#organizers .container>div {
+padding: 15px;
+}
