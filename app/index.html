@@ -70,7 +70,7 @@
                         <p id="date-react" class="visible-xs-block">July 02 &amp; 03 <span id="city">PARIS, FRANCE</span></p>
                     </div>
                     <div class="col-lg-5 col-xs-5 col-sm-5" id="logo-react">
-                        <img class="" src="images/reacteurope.png" alt="React Europe" width="300" height="300">
+                        <img class="img-responsive" src="images/reacteurope.png" alt="React Europe" width="300" height="300">
                 </div>
                 </div>
                      </div>
@@ -90,14 +90,16 @@
               <div class="clearfix"></div>
 
           <div class="text-center wrapper-btn">
-            <a class="btn btn-re btn-warning btn-lg active" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
-               <i class="fa fa-star"></i>
-Get notified about tickets selling date and schedule.
-
-              </a>
+            <a class="btn btn-lg btn-re btn-warning active hidden-xs" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
+Get notified about tickets selling date and schedule.</a>
+              
 	  </div>
-        </div>
 	</div>
+                <div class="text-center wrapper-btn">
+            <a class="btn btn-re btn-lg btn-warning active visible-xs" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
+Get tickets notifications</a>
+        </div>
+        </div>
     </section>
 
 
@@ -313,7 +315,7 @@ Get notified about tickets selling date and schedule.
         <h4 class="modal-title" id="ticketModalLabel">Get tickets</h4>
       </div>
       <div class="modal-body">
-<iframe src="https://docs.google.com/forms/d/186_VUzeJ63IJZFcXyiThB5WkAj6UymxGo-1bzxTDITs/viewform?embedded=true" width="600" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<iframe src="https://docs.google.com/forms/d/186_VUzeJ63IJZFcXyiThB5WkAj6UymxGo-1bzxTDITs/viewform?embedded=true" class="google-form" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -321,6 +323,7 @@ Get notified about tickets selling date and schedule.
     </div>
   </div>
 </div>
+
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">

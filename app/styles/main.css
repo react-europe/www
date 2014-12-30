@@ -194,6 +194,11 @@ text-align: center;
 display: block;
 }
 
+.google-form {
+ width: 280px; 
+height: 500px;
+}
+
 }
 
 @media (max-width: 320px) {
@@ -237,6 +242,7 @@ font-size: 20px;
 .btn-re {   
 color: #2c3e50 !important;
 font-weight: bolder;
+font-size: 20px;
 }
 
 .btn:hover {
@@ -366,6 +372,15 @@ margin-top: 10px;
 display: inline-block;
 }
 
+.ticket-modal {
+    width: 700px;
+    text-align: center;
+}
+    
+.google-form {
+ width: 600px; 
+height: 500px;
+}
 
 }
 
@@ -512,10 +527,7 @@ float:right;
 margin-right: 10px;
 }
 
-.ticket-modal {
-    width: 700px;
-    text-align: center;
-}
+
 
 
 
