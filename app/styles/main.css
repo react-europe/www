@@ -27,14 +27,43 @@ section#home {
 padding-top: 50px;
 }
 
+@media (min-width: 319px) and (max-width: 321px) {
+#city{
+    font-size: 12px;
+}
+.header-social a {
+color: white;
+margin-left: 7px;
+font-size: 10px;
+}
+
+}
 @media (max-width: 1024px) {
+.header-social{
+float:right;
+color: white;
+}
+.header-social a {
+color: white;
+margin-left: 7px;
+font-size: 10px;
+}
  #sponsors {
  text-align: center;
  }
 }
 
 @media (min-width: 992px) {
-
+.header-social{
+float:right;
+color: white;
+}
+.header-social a {
+color: white;
+margin-left: 10px;
+font-size: 12px;
+}
+ 
 .row {
   margin-left: 0px;
     margin-right: 0px;
@@ -45,6 +74,10 @@ font-size: 71px;
 color: #FFFFFF;
 text-align: right;
 }
+#home #date-react a {
+    color: #FFFFFF;
+    text-decoration: none;
+} 
 #home #date-react {
 font-size: 18px;
     margin-top: -15px;
@@ -82,6 +115,11 @@ padding: 25px;
 font-size: 54px;
 color: #FFFFFF;
     text-align: right;
+}
+
+#home #date-react a {
+    color: #FFF;
+text-decoration: none;
 }
 #home #date-react {
 font-size: 20px;
@@ -163,6 +201,11 @@ font-size: 23px;
 color: #FFFFFF;
     text-align: right;
 }
+#home #date-react a {
+    color: #FFFFFF;
+    text-decoration: none;
+} 
+
 #home #date-react {
 font-size: 16px;
     color: #FFFFFF;
@@ -353,7 +396,7 @@ border-top-left-radius: 3px;
 border-top-right-radius: 3px;
 }
 
-.fa-calendar {
+.fa-calendar-react {
 color: rgb(224, 126, 36);
 }
 
@@ -560,4 +603,10 @@ text-decoration: none;
 
 #organizers .container>div {
 padding: 15px;
+}
+
+#react-date-link {
+    border-bottom: dotted 2px white;
+    margin: 0;
+display: inline;
 }
