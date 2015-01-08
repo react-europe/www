@@ -27,6 +27,11 @@ section#home {
 padding-top: 50px;
 }
 
+@media (min-width: 598px) and (max-width: 602px) {
+    #logo-react {
+        padding-top: 16px;
+    }
+}
 @media (min-width: 319px) and (max-width: 321px) {
 #city{
     font-size: 12px;
@@ -610,3 +615,17 @@ padding: 15px;
     margin: 0;
 display: inline;
 }
+@media (min-width: 598px) and (max-width: 602px) {
+    #logo-react {
+        padding-top: 16px;
+    }
+    #about p {
+        font-size: 17px;
+    }
+.header-social a {
+color: white;
+margin-left: 7px;
+font-size: 12px;
+}
+}
+
