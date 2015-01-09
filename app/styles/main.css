@@ -629,3 +629,11 @@ font-size: 12px;
 }
 }
 
+.subtitle {
+    text-align: center;
+    margin-bottom: 30px !important;
+}
+
+.speaker-title{
+    margin-bottom: 0px !important;
+}
