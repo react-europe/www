@@ -351,11 +351,60 @@ font-weight: 500;
 }
 
 section#getting-there {
+    padding-bottom: 70px;
+    position:relative;
+}
+
+section#tickets {
 background-color: #f0f0f0;
 border-top: 1px solid #ddd;
 border-bottom: 1px solid #ddd;
-    padding-bottom: 70px;
-    position:relative;
+padding-bottom: 70px;
+}
+
+a#icon-calendar-link {
+text-decoration: none;
+margin: 0px 3px 0px 3px;
+}
+
+.row-ticket-info {
+margin-top: 40px !important;
+}
+
+.ticket-icon {
+color: #cacaca;
+}
+
+.service-heading {
+font-weight: bolder;
+}
+
+/*.ticket-1 {
+color: #4656a0;
+}
+
+.ticket-2 {
+color: #a04656;
+}
+
+.ticket-3 {
+color: #83a046;
+}
+.ticket-4 {
+color: #a09046;
+}
+.ticket-5 {
+color: #46a090;
+}*/
+
+.eventlama-tickets-btn {
+color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+  font-weight: bolder;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 10px 
 }
 
 .container-full {
@@ -535,6 +584,7 @@ padding-bottom: 50px;
 }
 
 section#sponsors {
+background-color: #f0f0f0;
 border-top: 1px solid #ddd;
 border-bottom: 1px solid #ddd;
 padding-bottom: 70px;
@@ -571,6 +621,7 @@ margin-top: 30px;
 }
 
 footer {
+    background-color: #f0f0f0;
     border-top: 1px solid #ddd;
 border-bottom: 1px solid #ddd;
     padding: 30px 0;
@@ -594,7 +645,6 @@ margin-right: 10px;
 }
 
 section#organizers {
-background: #f0f0f0;
  padding-bottom: 60px;
 }
 
@@ -634,6 +684,20 @@ font-size: 12px;
     margin-bottom: 30px !important;
 }
 
-.speaker-title{
+.speaker-title,
+.tickets-title {
     margin-bottom: 0px !important;
+}
+
+/* modal diversity */
+.ss-form-desc {
+text-align: left;
+}
+
+.ticket-type {
+    min-height: 150px;
+}
+
+.ticket-type-short {
+    min-height: 55px;
 }
