@@ -54,7 +54,7 @@ margin-left: 7px;
 font-size: 10px;
 }
  #sponsors {
- text-align: center;
+     text-align: center;
  }
 }
 
@@ -463,6 +463,9 @@ text-decoration: none;
 }
 
 @media (min-width: 768px) {
+.tickets-footer {
+  margin-top: 50px;
+}
 h2.title {
 font-size: 39px;
 font-size: 39px;
@@ -694,10 +697,20 @@ font-size: 12px;
 text-align: left;
 }
 
+@media (min-width: 768px){
 .ticket-type {
     min-height: 150px;
+}
 }
 
 .ticket-type-short {
     min-height: 55px;
+}
+
+.ticket-container {
+    margin-bottom: 30px;
+}
+
+#facebook-container {
+    text-align: center;
 }
