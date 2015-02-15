@@ -280,9 +280,6 @@ margin-top: -100px !important;
 }
 }
 
-#about a {
-color: rgb(224, 126, 36);
-}
 
 section#about {
     padding-bottom: 60px;
@@ -300,24 +297,6 @@ font-weight: 300;
 
 section#about>div {
 font-size: 20px;
-}
-
-.btn-re {   
-color: #2c3e50 !important;
-font-weight: bolder;
-font-size: 20px;
-}
-
-.btn:hover {
-color: #FFFFFF !important;
-}
-
-.fa-border {
-border-color: #2c3e50;
-}
-
-.fa-border:hover {
-border-color: #FFFFFF;
 }
 
 
@@ -405,6 +384,12 @@ color: #fff;
   border-radius: 3px;
   font-size: 20px;
   padding: 10px 
+}
+
+.eventlama-tickets-btn:hover {
+  color: #fff;
+  opacity: .75;
+  transition: all .3s ease 0s;
 }
 
 .container-full {
