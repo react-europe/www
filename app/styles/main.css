@@ -175,6 +175,11 @@ font-size: 15px;
 }
 @media (max-width: 768px) {
     
+
+.eventlama-ticker-btn{
+  width: 225px !important;
+
+}
 #home{
     padding-bottom: 5px;
 }
@@ -376,17 +381,17 @@ color: #a09046;
 color: #46a090;
 }*/
 
-.eventlama-tickets-btn {
+.eventlama-btn {
 color: #fff;
   background-color: #ec971f;
   border-color: #d58512;
   font-weight: bolder;
   border-radius: 3px;
   font-size: 20px;
-  padding: 10px 
+  padding: 10px;
 }
 
-.eventlama-tickets-btn:hover {
+.eventlama-btn:hover {
   color: #fff;
   opacity: .75;
   transition: all .3s ease 0s;
@@ -694,9 +699,83 @@ text-align: left;
 }
 
 .ticket-container {
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+  background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+  -moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.6);
+  box-shadow:         0px 0px 8px rgba(0,0,0,0.6);
+  position: relative;
+  z-index: 90;
     margin-bottom: 30px;
 }
 
 #facebook-container {
     text-align: center;
 }
+
+.btn .badge {
+  position: relative;
+  top: -25px;
+}
+
+.badge-soldout {
+  background-color: #3498db;
+  border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 17px;
+}
+
+.folded h2 {
+    background: #4656a0;
+    background-image: radial-gradient(transparent 30%, rgba(0, 0, 0, 0.2));
+    border: 0 solid rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.2);
+}
+ 
+.folded:before, div.folded:after {
+    bottom: 26px;
+    content: "";
+    height: 28px;
+    position: absolute;
+    width: 48%;
+    z-index: 99;
+}
+.folded:before {
+    left: 2%;
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+}
+.folded:after {
+    right: 2%;
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+}
+.folded h2 {
+  border-width: 1px 1px 2px;
+  margin: 0;
+  padding: 1px 20px;
+  position: absolute;
+  margin-top: 10px;
+  z-index: 30;
+  right: -1px;
+}
+.folded h2:after {
+    border-width: 7px;
+    border-style: solid;
+    border-color: #134 transparent transparent #134;
+    bottom: -15px;
+    content: "";
+    position: absolute;
+    right: -1px;
+}
+
