@@ -51,7 +51,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="navbar-collapse collapse" >
       <ul class="nav navbar-nav ">
-        <li class="active-re"><a href="#about">About</a></li>
+        <li class="active-re hidden-sm"><a href="#about">About</a></li>
         <li><a href="#speakers">Speakers</a></li>
          <li><a href="#schedule">Schedule</a></li>
          <li><a href="#tickets">Tickets</a></li>
@@ -60,7 +60,7 @@
         </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li class="active-re">
+        <li class="active-re hidden-sm">
             <a class="navbar-tickets " href="https://eventlama.com/#/events/reacteurope/tickets">Buy Tickets »</a>
           </li>
       </ul>
@@ -71,7 +71,7 @@
       <section id="home">
               <div class="container">
                   <div class="row">
-                    <div class="col-lg-5 col-lg-offset-1 col-sm-5 col-sm-offset-2  col-xs-6 col-xs-offset-1" id="text-react">
+                    <div class="col-lg-5 ticket-offset col-sm-5 col-sm-offset-2  col-xs-6 col-xs-offset-1" id="text-react">
                         <p id="name-react">ReactEurope</p>
                         <p id="date-react" class="visible-sm-block visible-md-block visible-lg-block">
                         <a href="webcal://react-europe.org/docs/react-europe-calendar.ics">
@@ -106,12 +106,12 @@
               <div class="clearfix"></div>
 
           <div class="text-center wrapper-btn">
-            <a class="btn eventlama-btn hidden-xs" href="https://eventlama.com/#/events/reacteurope/tickets" role="button">Buy tickets</a>
+            <a class="btn eventlama-btn" href="https://eventlama.com/#/events/reacteurope/tickets" role="button">Buy tickets</a>
               
 	  </div>
 	</div>
                 <div class="text-center wrapper-btn">
-            <a class="btn btn-re btn-lg btn-warning active visible-xs" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
+            <a class="btn btn-re btn-lg btn-warning active hide" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
 Get tickets notifications</a>
         </div>
         </div>
@@ -288,9 +288,30 @@ Get tickets notifications</a>
            <h4 class="subtitle">
                Mark your &nbsp;<i class="fa fa-calendar"></i>, the tickets sales will start on Monday, February 16 at 13:00 UTC! Each ticket price will have an extra 20% French VAT.</h4>
              <div class="row">
-                 <div class="col-xs-12 col-lg-3 col-md-3 col-sm-5 ticket-container">
+                  <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
+                   <div class="folded">
+                     <h2>SOLD OUT</h2>
+                   </div>
+                     <span class="fa-stack fa-4x">
+                         <i class="fa fa-circle fa-stack-2x ticket-icon-bg "></i>
+                         <i class="fa fa-bolt fa-stack-1x ticket-icon"></i>
+                     </span>
+                     <h4 class="service-heading">Early Bird Tickets</h4>
+                     <p class="ticket-type">Full two-day conference access. A great deal for all of you early birds who trust and enable us to get this conference off the ground.</p>
+                     <button class="btn eventlama-btn eventlama-ticket-btn disabled">125€ + VAT</button>
+                     </div>
+                  <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
+                     <span class="fa-stack fa-4x">
+                         <i class="fa fa-circle fa-stack-2x ticket-icon-bg "></i>
+                         <i class="fa fa-ticket fa-stack-1x ticket-icon"></i>
+                     </span>
+                     <h4 class="service-heading">Regular Tickets</h4>
+                     <p class="ticket-type">Full two-day conference access. That's our regular ticket. This ticket will go on sale very soon too so stay tuned for more news.</p>
+                     <button type="button" class="btn eventlama-btn disabled">€349 + VAT</button>
+                 </div>
+                 <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-circle fa-stack-2x ticket-icon-bg "></i>
                         <i class="fa fa-github-alt fa-stack-1x ticket-icon"></i>
                     </span>
                     <h4 class="service-heading">Contributors &lt;3 Tickets</h4>
@@ -298,62 +319,43 @@ Get tickets notifications</a>
                     Each contributor will also get a special t-shirt and badge. </p>
                      <a class="btn eventlama-btn" href="https://eventlama.com/#/events/reacteurope/tickets" role="button">€199 + VAT - x%</a>
                  </div>
-                 <div class="col-xs-12 col-lg-3 col-md-3 col-sm-offset-2 col-sm-5 ticket-container"> 
+                 <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container"> 
                      <span class="fa-stack fa-4x">
-                         <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                         <i class="fa fa-circle fa-stack-2x ticket-icon-bg"></i>
                          <i class="fa fa-gift fa-stack-1x ticket-icon"></i>
                      </span>
                      <h4 class="service-heading">Diversity Tickets</h4>
                      <p class="ticket-type">We will offer 3 free tickets including hotel and transportation for underrepresented groups in tech. Would you like to attend the conference but cannot afford the ticket?</p>
                      <!-- <a href="#" class="btn btn-xl">Apply</a> -->
-                     <a type=button class="btn eventlama-btn disabled" data-toggle="modal" data-target="#diversityModal-disabled">Apply</a>
+                     <a type=button class="btn eventlama-btn" data-toggle="modal" data-target="#diversityModal">Apply</a>
                  </div>
                 <!-- <div class="col-lg-3 col-md-3 col-sm-6">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-circle fa-stack-2x ticket-icon-bg "></i>
                         <i class="fa fa-graduation-cap fa-stack-1x ticket-icon"></i>
                     </span>
                     <h4 class="service-heading">Student Tickets</h4>
                     <p>We want everyone who is interested to attend this conference, thus we will support students with a reduced ticket price.</p>
                     <button type="button" class="btn eventlama-btn">79€ + VAT</button>
                  </div> -->
-                 <div class="col-xs-12 col-lg-3 col-md-3 col-sm-6 ticket-container">
-                   <div class="folded">
-                     <h2>SOLD OUT</h2>
-                   </div>
+                
+                 <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
                      <span class="fa-stack fa-4x">
-                         <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                         <i class="fa fa-bolt fa-stack-1x ticket-icon"></i>
-                     </span>
-                     <h4 class="service-heading">Early Bird Tickets</h4>
-                     <p class="ticket-type">Full two-day conference access. A great deal for all of you early birds who trust and enable us to get this conference off the ground.</p>
-                     <button class="btn eventlama-btn eventlama-ticket-btn disabled">125€ + VAT</button>
-                     </div>
-                 <div class="col-xs-12 col-md-3 col-sm-6 ticket-container">
-                     <span class="fa-stack fa-4x">
-                         <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                         <i class="fa fa-circle fa-stack-2x ticket-icon-bg "></i>
                          <i class="fa fa-trophy fa-stack-1x ticket-icon "></i>
                      </span>
                      <h4 class="service-heading">Hackathon</h4>
-                     <p class="ticket-type">Hack, make new friends, win prizes and learn from the best who will be hanging around.</p>
+                     <p class="ticket-type">Hack, make new friends, win prizes and learn from the best who will be hanging around. More details will be available this week.</p>
                      <button type="button" class="btn eventlama-btn disabled">Free but limited</button>
                  </div>
-                  <div class="col-xs-12 col-md-3 col-sm-6 ticket-container">
+                 
+                     <div class="col-xs-12 ticket-offset col-lg-3 col-sm-12 col-md-3 ticket-container">
                      <span class="fa-stack fa-4x">
-                         <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                         <i class="fa fa-ticket fa-stack-1x ticket-icon"></i>
-                     </span>
-                     <h4 class="service-heading">Regular Tickets</h4>
-                     <p class="ticket-type-short">Full two-day conference access. That's our regular ticket.</p>
-                     <button type="button" class="btn eventlama-btn disabled">€349 + VAT</button>
-                 </div>
-                     <div class="col-xs-12 col-md-3 col-sm-6 ticket-container">
-                     <span class="fa-stack fa-4x">
-                         <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                         <i class="fa fa-circle fa-stack-2x ticket-icon-bg "></i>
                          <i class="fa fa-clock-o fa-stack-1x ticket-icon"></i>
                      </span>
                      <h4 class="service-heading">Late birds</h4>
-                     <p class="ticket-type-short">Full two-day conference access. That's our late bird ticket.</p>
+                     <p class="ticket-type">Full two-day conference access. That's our late bird ticket.</p>
                      <button type="button" class="btn eventlama-btn disabled">€449 + VAT</button>
                  </div>
 
@@ -584,11 +586,7 @@ Get tickets notifications</a>
           <div class="ss-top-of-page">
               <div class="ss-form-heading">
                   <h1 class="ss-form-title" dir="ltr">ReactEurope Diversity Tickets</h1>
-<div class="ss-form-desc ss-no-ignore-whitespace" dir="ltr">Welcome to the Diversity programme of .concat() <a href="https://www.google.com/url?q=https%3A%2F%2Fconc.at%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEZA08IlEsH7NpSGw2GOeYNbtJ_Mg">https://conc.at/</a> whose very first edition is set to take place in Salzburg, Austria, on 7 March 2015.<p>The following form is meant for members of under-represented groups in tech who would otherwise not be able to afford going to the conference to apply for:<br>- sponsored tickets<br>- financial assistance with travel<br>- free accommodation</p><p>If you belong to a group of people (likely) under-represented at .concat() and would like to attend the conference but cannot afford to pay for a ticket yourself, we invite you to let us know by filling out the form below. Thanks to our generous sponsors of Diversity Tickets, we can invite a number of you to attend the conference for free -- and we are hoping to find even more people willing to support others this way within the next few weeks. (If you know someone who might be interested in becoming a Diversity sponsor, please be so kind and refer them to here: <a href="http://www.google.com/url?q=http%3A%2F%2Fconc-at.tumblr.com%2Fpost%2F107499311229%2Fdiversity-tickets&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGnmXxeyCkXxUpGt7HAOf-Ow1zAMA">http://conc-at.tumblr.com/post/107499311229/diversity-tickets</a>)</p><p>Tickets will be awarded by Techtrrrs <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.techtrrrs.at%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGhYCneymUKqyv81QBDE-sjWnubhg">http://www.techtrrrs.at/</a> in co-operation with the organisers of .concat(). We are accepting applications for Diversity Tickets starting now and will give a number of them away on a rolling basis. Some tickets will stay reserved for a while longer so as not to favour only those who heard about the programme first, but to give everyone a fair chance at being considered for a sponsored ticket. Please note that our funds for assistance with travel are limited and we can only provide sponsored accommodation for a very small number of people.</p><p>While the conference's official language is English, we understand not everyone will feel equally comfortable or confident communicating with us in English, especially considering the local language is German. We thus invite you to provide your answers to our questions in either English or German, and to let us know which language you would prefer for all future communications regarding the Diversity programme (see last question of this form). Note also that once you have submitted the form, you will be given a link with which you can go back and edit your answers, to e.g. fix mistakes or add information (the link will be displayed on-screen - you will have to copy and save it for later use).</p><p>Your personally identifiable information (name, e-mail address, phone number) will remain hidden during the awarding process and only be accessed once we are ready to get in touch with you.</p><p></p><p></p><p></p><p></p></div>
-
-<div class="ss-required-asterisk" aria-hidden="true">* Required</div></div></div>
-          
-<iframe src="https://docs.google.com/forms/d/186_VUzeJ63IJZFcXyiThB5WkAj6UymxGo-1bzxTDITs/viewform?embedded=true" class="google-form" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<iframe src="https://docs.google.com/forms/d/19HykXCnot9FXfdhBGyfU5-Txe_VM4y1QanE1JefGJk4/viewform?embedded=true" class="google-form" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

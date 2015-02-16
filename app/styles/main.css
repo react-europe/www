@@ -694,6 +694,20 @@ text-align: left;
 }
 }
 
+@media (max-width: 769px){
+.ticket-offset {
+    padding-bottom: 5px;
+}
+}
+
+@media (min-width: 769px){
+
+.ticket-offset {
+    margin-left: 6%;
+    padding-bottom: 5px;
+}
+}
+
 .ticket-type-short {
     min-height: 55px;
 }
@@ -767,7 +781,7 @@ text-align: left;
   position: absolute;
   margin-top: 10px;
   z-index: 30;
-  right: -1px;
+  right: -15px;
 }
 .folded h2:after {
     border-width: 7px;
@@ -779,3 +793,6 @@ text-align: left;
     right: -1px;
 }
 
+.ticket-icon-bg {
+  color: #f5f5f5;
+}
