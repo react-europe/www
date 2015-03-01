@@ -445,20 +445,16 @@ cursor: pointer;
         color: rgb(224, 126, 36);
     }
 
-    .pull-right {
-        margin-top: 12px;
-    }
-
     .media a:hover {
         text-decoration: none;
     }
 
     @media (min-width: 768px) {
-        .tickets-footer {
+        .tickets-footer,
+        .speakers-footer {
             margin-top: 50px;
         }
         h2.title {
-            font-size: 39px;
             font-size: 39px;
         }
         .media-left-re { 
@@ -800,4 +796,12 @@ cursor: pointer;
 
 #vertical-center-header {
     padding:15px 0px 15px 0px; display: -webkit-flexbox;   display: -ms-flexbox;   display: -webkit-flex;   display: flex;   -webkit-flex-align: center;   -ms-flex-align: center;   -webkit-align-items: center;   align-items: center;   text-align: center;
+}
+
+.media-body h4 {
+    cursor: pointer; 
+}
+
+.media-heading span {
+    margin-left: 5px;
 }
