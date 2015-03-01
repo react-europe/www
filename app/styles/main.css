@@ -798,7 +798,8 @@ cursor: pointer;
     padding:15px 0px 15px 0px; display: -webkit-flexbox;   display: -ms-flexbox;   display: -webkit-flex;   display: flex;   -webkit-flex-align: center;   -ms-flex-align: center;   -webkit-align-items: center;   align-items: center;   text-align: center;
 }
 
-.media-body h4 {
+.media-body h4.media-heading, 
+.media-left img {
     cursor: pointer; 
 }
 
