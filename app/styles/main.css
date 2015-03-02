@@ -265,10 +265,7 @@ section#home {
     .code-re {  
         margin-left: 15px;
     }
-    .foot div{
-        display: block;
-    }
-
+    
     .google-form {
         width: 280px; 
         height: 500px;
@@ -489,25 +486,27 @@ cursor: pointer;
         .img-circle-re {
             border: 4px solid rgb(224, 126, 36);
         }
-        .foot div{
+        .foot div {
             display: inline-block;
         }
-
-        .ticket-modal {
-            width: 700px;
+        #talkModalBody .foot {
             text-align: center;
         }
-
+        .foot-speaker2 {
+           float: right;
+        }
+        .foot-speaker1 {
+           float: left;
+        }
+        .ticket-modal {
+            width: 700px;
+        }
+        #talkModalLabel {
+            text-align: center;
+        }
         .google-form {
             width: 600px; 
             height: 500px;
-        }
-        
-        a.anchor {
-            display: block; 
-            position: relative; 
-            top: -51px; 
-            visibility: hidden;
         }
 
     }
@@ -522,7 +521,9 @@ cursor: pointer;
         margin: 0px 0px 12px 0px;
         letter-spacing: 2px;
     }
-
+    .modal-body .media-heading-re {
+        text-align: center;
+    }
     .media-body p {
         color: #777;
     }
@@ -533,9 +534,9 @@ cursor: pointer;
         color: #5f5f5f;
     }
 
-    .foot div:after {
+    .foot .name:after {
         content: '|';
-        margin: 0px 15px;
+        margin: 0px 5px;
         color: #ebebeb; 
         font-weight: 400;
         font-size: 18px;
@@ -549,10 +550,6 @@ cursor: pointer;
         color: rgb(224, 126, 36);
         font-size: 20px;
         margin-right: 5px;
-    }
-
-    .foot .pro {
-        color: #5f5f5f;
     }
 
     .foot .links a{
@@ -839,4 +836,6 @@ margin-top: 3px;
     color: #2c3e50;
 }
 
-
+.toggle-modal {
+    cursor: pointer;
+}

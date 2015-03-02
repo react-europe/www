@@ -20,3 +20,8 @@ $('.nav a').on('click', function(){
     $(".navbar-toggle").click();
    }
    });
+
+$(".toggle-modal").click(function(){
+    $("#talkModal").modal();
+    $("#talkModalBody").html($($(this).data("target")).html());
+})
