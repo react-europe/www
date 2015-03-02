@@ -486,32 +486,34 @@ cursor: pointer;
         .img-circle-re {
             border: 4px solid rgb(224, 126, 36);
         }
-        .foot div {
-            display: inline-block;
+
+        .google-form {
+            width: 600px; 
+            height: 500px;
         }
-        #talkModalBody .foot {
-            text-align: center;
+                .ticket-modal {
+            width: 700px;
         }
-        .foot-speaker2 {
+         .foot-speaker2 {
            float: right;
         }
         .foot-speaker1 {
            float: left;
         }
-        .ticket-modal {
-            width: 700px;
+
+    }
+ #talkModalBody .foot {
+            text-align: center;
         }
+       
+        .foot div {
+            display: inline-block;
+        }
+       
+
         #talkModalLabel {
             text-align: center;
         }
-        .google-form {
-            width: 600px; 
-            height: 500px;
-        }
-
-    }
-
-
     .media-body-re {
         margin-right: 20px;
     }
@@ -838,4 +840,8 @@ margin-top: 3px;
 
 .toggle-modal {
     cursor: pointer;
+}
+
+#workshop-title {
+    font-weight: bolder;
 }
