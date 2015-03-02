@@ -192,8 +192,15 @@ section#home {
     .media-left-re { 
         width: 75px;
         padding: 15px;
-        background-color: rgb(54,69,80);
+        background-color: #f5f5f5;
     }
+    
+    .media-left-reacteurope { 
+        width: 75px;
+        padding: 15px;
+        background-color: #f5f5f5;
+    }
+    
     .container-media-icons {
         color: rgb(224, 126, 36);
         text-align: left;
@@ -436,9 +443,6 @@ cursor: pointer;
 
     .panel-heading {
         padding: 0px; 
-        border-bottom: 2px solid #173075 !important;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
     }
 
     .fa-calendar-react {
@@ -460,7 +464,12 @@ cursor: pointer;
         .media-left-re { 
             width: 150px;
             padding: 15px;
-            background-color: rgb(54,69,80);
+            background-color: #f5f5f5;
+        }
+        .media-left-reacteurope { 
+            width: 150px;
+            padding: 15px;
+            background-color: #f5f5f5;
         }
         .container-media-icons {
             color: rgb(224, 126, 36);
@@ -482,6 +491,12 @@ cursor: pointer;
         .google-form {
             width: 600px; 
             height: 500px;
+        }
+        a.anchor {
+            display: block; 
+            position: relative; 
+            top: -51px; 
+            visibility: hidden;
         }
 
     }
@@ -543,7 +558,6 @@ cursor: pointer;
         background-color: #2c3e50;
         color: #FFFFFF;
         font-size: 25px;
-        text-transform: uppercase;
     }
 
     .schedule-table .special {
@@ -799,10 +813,25 @@ cursor: pointer;
 }
 
 .media-body h4.media-heading, 
-.media-left img {
+.media-left .image-speaker {
     cursor: pointer; 
 }
 
 .media-heading span {
     margin-left: 5px;
 }
+
+.plus-icon-schedule {
+    float: right;
+    margin-top: 17px;
+}
+
+.img-circle-speaker2 {
+margin-top: 3px;
+}
+
+.time-label {
+    color: #2c3e50;
+}
+
+
