@@ -91,10 +91,8 @@ section#home {
         padding-left: 142px;
         text-align: right;
     }
-    #home #text-react {
-        /*margin-top: 80px;*/
-    }
-    #map-dialog{
+   
+    #map-dialog {
         position: absolute;
         top: 218px;
         background: #FFF;
@@ -106,7 +104,33 @@ section#home {
         height:100px;
         background: #e7e7e7;
     }
+    
+    .sponsors-flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
 }
+
+.flex-item {
+  padding: 5px;
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+}
+
 @media (max-width: 992px) {
     .row {
         margin-left: 0px;
@@ -154,6 +178,9 @@ section#home {
         width:50px;
         height:50px;
         background: #e7e7e7;
+    }
+    .supporter {
+        margin-top: 50px;
     }
 }
 
@@ -744,9 +771,6 @@ cursor: pointer;
     margin-bottom: 30px;
 }
 
-#facebook-container {
-    text-align: center;
-}
 
 .btn .badge {
     position: relative;
