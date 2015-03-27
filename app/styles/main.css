@@ -682,13 +682,10 @@ cursor: pointer;
         margin-bottom: 0px; 
     }
 
-    .table > thead > tr > th {
+    .table > thead > tr > th,
+    .table > tbody > tr > td {
         text-align: center;
-    }
-
-    .table-bordered > thead > tr > th,
-    .table-bordered > tbody > tr > td {
-        border: 2px solid #FFFFFF !important;
+        vertical-align: middle;
     }
 
     .table-re {
@@ -800,11 +797,10 @@ cursor: pointer;
         margin-bottom: 30px !important;
     }
 
-    .speaker-title,
-    .tickets-title {
-        /*
-         */
-}
+    .table-bordered > thead > tr > th,
+    .table-bordered > tbody > tr > td {
+        border: 2px solid #fafafd !important;
+    }
 
 /* modal diversity */
 .ss-form-desc {
@@ -956,4 +952,6 @@ margin-top: 3px;
     border-color: #dee1f1;
     color: #333;
 }
+
+
 
