@@ -294,10 +294,10 @@ section#home {
 @media (max-width: 768px) {
 .sponsor-logo-diamond {
   width: 100%;
-  padding-top: 20px;
 }
 .sponsor-logo-gold {
   width: 70%;
+  margin-top: 30px;
 }
 .flex-item-sponsor-diamond {
     width: 100%;
@@ -305,19 +305,21 @@ section#home {
   text-align: center;
   margin-top: 20px;
 }
-
-.flex-item-sponsor-gold {
-    width: 70%;
-  text-align: center;
-  margin-top: 20px;
-  line-height: 100px;
-}
-
-.front, .back {
+.flex-item-sponsor-diamond, .flex-item-sponsor-diamond .front, .flex-item-sponsor-diamond .back {
 	width: 100%;
-	min-height: 100px;
+	min-height: 190px;
     text-align: center;
 }
+
+.flex-item-sponsor-gold, .flex-item-sponsor-gold .front, .flex-item-sponsor-gold .back {
+	width: 90%;
+	min-height: 100px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
     .eventlama-ticker-btn{
         width: 225px !important;
 
@@ -389,6 +391,8 @@ section#home {
     .flex-item-sponsor-bronze {
           margin-top: 10px;
           line-height: 90px;
+        width: 152px;
+        margin-left: 10px;
         }
     #map-dialog{
         background: #FFF;
