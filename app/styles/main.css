@@ -303,7 +303,13 @@ section#home {
     width: 100%;
   line-height: 190px;
   text-align: center;
-  margin-top: 20px;
+}
+.gold-blurb {
+    line-height: 1.0em !important;
+    font-size: 12px;
+    text-align: left !important;
+    padding: 10px !important;
+    margin: 0 !important;
 }
 .flex-item-sponsor-diamond, .flex-item-sponsor-diamond .front, .flex-item-sponsor-diamond .back {
 	width: 100%;
@@ -790,7 +796,7 @@ cursor: pointer;
     }
 
     #sponsors h2.title {
-        margin: 40px 0px 30px;
+        margin: 40px 0px 10px;
     }
 
     #sponsors h3{
