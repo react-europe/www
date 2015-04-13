@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 300,400,700;
+	src:
+		local('Alegreya Sans Light
+Alegreya Sans
+Alegreya Sans Bold'),
+		local('AlegreyaSans-Light
+AlegreyaSans-Regular
+AlegreyaSans-Bold'),
+		/* from http://fonts.gstatic.com/s/alegreyasans/v3/KYNzioYhDai7mTMnx_gDgrSL3g004LNKkgHM9a6X73A.eot */
+		url('Alegreya_Sans_300,400,700_latin.eot?#iefix') format('embedded-opentype'),
+		/* from http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aaWGgEO1vGR9ucXjKCo8vxU.woff
+http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9ae1ouKFe7zgu3OIJnKP8_aw.woff
+http://fonts.gstatic.com/s/alegreyasans/v3/KYNzioYhDai7mTMnx_gDgtUFqmyT-Ih543PWa_C0ig4.woff */
+		url('Alegreya_Sans_300,400,700_latin.woff') format('woff'),
+		/* from http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9ac5nNYjIb-KbqEh50utxFtk.ttf
+http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aX726VmFjkD_1knHNL407_k.ttf
+http://fonts.gstatic.com/s/alegreyasans/v3/KYNzioYhDai7mTMnx_gDgoB9a16epZVaac-gfobfbfA.ttf */
+		url('Alegreya_Sans_300,400,700_latin.ttf') format('truetype'),
+		/* from http://fonts.gstatic.com/l/font?kit=KYNzioYhDai7mTMnx_gDgjjR3xVPJpEcWH1UXm1-s8c#AlegreyaSans */
+		url('Alegreya_Sans_300,400,700_latin.svg#AlegreyaSans') format('svg');
+}
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Alegreya Sans'),
+		local('AlegreyaSans-Regular'),
+		/* from http://fonts.gstatic.com/s/alegreyasans/v3/KYNzioYhDai7mTMnx_gDgrSL3g004LNKkgHM9a6X73A.eot */
+		url('Alegreya_Sans_400.eot?#iefix') format('embedded-opentype'),
+		/* from http://fonts.gstatic.com/s/alegreyasans/v3/KYNzioYhDai7mTMnx_gDgtUFqmyT-Ih543PWa_C0ig4.woff */
+		url('Alegreya_Sans_400.woff') format('woff'),
+		/* from http://fonts.gstatic.com/s/alegreyasans/v3/KYNzioYhDai7mTMnx_gDgoB9a16epZVaac-gfobfbfA.ttf */
+		url('Alegreya_Sans_400.ttf') format('truetype'),
+		/* from http://fonts.gstatic.com/l/font?kit=KYNzioYhDai7mTMnx_gDgjjR3xVPJpEcWH1UXm1-s8c#AlegreyaSans */
+		url('Alegreya_Sans_400.svg#AlegreyaSans') format('svg');
+}
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local('Alegreya Sans Bold'),
+		local('AlegreyaSans-Bold'),
+		/* from http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aTaqlI4Zbww6vO_YCdhgxeo.eot */
+		url('Alegreya_Sans_700_latin.eot?#iefix') format('embedded-opentype'),
+		/* from http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9ae1ouKFe7zgu3OIJnKP8_aw.woff */
+		url('Alegreya_Sans_700_latin.woff') format('woff'),
+		/* from http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aX726VmFjkD_1knHNL407_k.ttf */
+		url('Alegreya_Sans_700_latin.ttf') format('truetype'),
+		/* from http://fonts.gstatic.com/l/font?kit=11EDm-lum6tskJMBbdy9aTMNmawHWsxtE2x84tjAX1I#AlegreyaSans */
+		url('Alegreya_Sans_700_latin.svg#AlegreyaSans') format('svg');
+}
