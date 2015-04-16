@@ -1131,3 +1131,7 @@ margin-top: 3px;
 .back a {
     text-decoration: none;
 }
+
+.formation-link {
+  font-weight: bold;
+}

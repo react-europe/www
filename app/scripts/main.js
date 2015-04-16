@@ -45,3 +45,12 @@ if ('serviceWorker' in navigator) {
     console.log('ServiceWorker registration failed: ', err);
   });
 }
+
+$.get("http://api.eventlama.com/geoip", function(response) {
+    console.log(response.CountryCode);
+    if(response && response.CountryCode){
+      $(".formation-link").removeClass("hidden");
+    }
+});
+
+$('[data-toggle="tooltip"]').tooltip();
