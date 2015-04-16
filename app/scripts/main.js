@@ -49,7 +49,7 @@ if ('serviceWorker' in navigator) {
 $.get("https://api.eventlama.com/geoip", function(response) {
     console.log(response.CountryCode);
     if(response && response.CountryCode && response.CountryCode==="FR"){
-      $(".formation-link").removeClass("hidden");
+      $(".formation-link, .formation-ticket").removeClass("hidden");
     }
 });
 
