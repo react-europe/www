@@ -46,7 +46,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-$.get("http://api.eventlama.com/geoip", function(response) {
+$.get("https://api.eventlama.com/geoip", function(response) {
     console.log(response.CountryCode);
     if(response && response.CountryCode){
       $(".formation-link").removeClass("hidden");
