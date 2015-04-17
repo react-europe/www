@@ -601,7 +601,9 @@ cursor: pointer;
     text-align: center;
 }
         .flex-item-sponsor-diamond .back p {
-            font-size: 25px;
+        margin-top: 8px !important;
+            line-height: 1.2;
+            text-align: left;
         }
         .flex-item-sponsor-gold .back p {
         margin-top: 8px !important;
