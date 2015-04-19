@@ -44,6 +44,10 @@ if ('serviceWorker' in navigator) {
     // registration failed :(
     console.log('ServiceWorker registration failed: ', err);
   });
+} else {
+  appCacheNanny.start({checkInterval: 1800000});
+}
+
 }
 
 $.get("https://api.eventlama.com/geoip", function(response) {
