@@ -48,8 +48,6 @@ if ('serviceWorker' in navigator) {
   appCacheNanny.start({checkInterval: 1800000});
 }
 
-}
-
 $.get("https://api.eventlama.com/geoip", function(response) {
     console.log(response.CountryCode);
     if(response && response.CountryCode && response.CountryCode==="FR"){
