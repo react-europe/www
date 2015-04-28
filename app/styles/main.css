@@ -105,7 +105,6 @@ section#home {
         background: #e7e7e7;
     }
     
-    
 .sponsors-flex-container {
   display: -webkit-box;
   display: -moz-box;
@@ -340,23 +339,32 @@ section#home {
 
     .media-left-re { 
         width: 75px;
-        padding: 15px;
+        padding: 5px;
         background-color: #f5f5f5;
     }
     
     .media-left-reacteurope { 
         width: 75px;
-        padding: 15px;
+        padding: 5px;
         background-color: #f5f5f5;
     }
     
+    .media-left-square { 
+            width: 75px;
+            padding: 5px;
+            background-color: #f5f5f5;
+        }
+        
     .container-media-icons {
         color: rgb(224, 126, 36);
-        text-align: left;
+        text-align: center;
         margin-top: 10px;
         font-size: 14px;
     }
     .img-circle-re {
+        border: 2px solid rgb(224, 126, 36);
+    }
+    .img-square-re {
         border: 2px solid rgb(224, 126, 36);
     }
 
@@ -404,7 +412,7 @@ section#home {
         background: #FFF;
         padding: 30px;
     }
-    .img-circle{
+    .img-circle {
         width:50px;
         height:50px;
         background: #e7e7e7;
@@ -636,6 +644,22 @@ cursor: pointer;
             padding: 15px;
             background-color: #f5f5f5;
         }
+        .media-left-square { 
+            width: 150px;
+            padding: 5px;
+            background-color: #f5f5f5;
+        }
+        
+        .media-left:hover,.media-left-square:hover,
+        .media-left-square:hover img {
+        width: 500px;
+        -webkit-transition: all 1s ease; /* Safari and Chrome */
+        -moz-transition: all 1s ease; /* Firefox */
+        -ms-transition: all 1s ease; /* IE 9 */
+        -o-transition: all 1s ease; /* Opera */
+        transition: all 1s ease;
+        } 
+         
         .container-media-icons {
             color: rgb(224, 126, 36);
             text-align: center;
@@ -644,7 +668,9 @@ cursor: pointer;
         .img-circle-re {
             border: 4px solid rgb(224, 126, 36);
         }
-
+        .img-square-re {
+            border: 4px solid rgb(224, 126, 36);
+        }
         .google-form {
             width: 600px; 
             height: 500px;
@@ -1136,4 +1162,9 @@ margin-top: 3px;
 
 .formation-link {
   font-weight: bold;
+}
+
+.media-left-square img {
+    cursor: pointer;
+    cursor: hand;
 }
