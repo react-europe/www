@@ -644,14 +644,14 @@ cursor: pointer;
             padding: 15px;
             background-color: #f5f5f5;
         }
-        .media-left-square { 
+        .media-left-square-ht { 
             width: 150px;
             padding: 5px;
             background-color: #f5f5f5;
         }
         
-        .media-left:hover,.media-left-square:hover,
-        .media-left-square:hover img {
+        .media-left-ht:hover,.media-left-square-ht:hover,
+        .media-left-square-ht:hover img {
         width: 500px;
         -webkit-transition: all 1s ease; /* Safari and Chrome */
         -moz-transition: all 1s ease; /* Firefox */
