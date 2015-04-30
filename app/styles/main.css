@@ -288,6 +288,9 @@ section#home {
         color: #FFFFFF;
         font-size: 17px;
     }
+    .media-container {
+        padding-top: 20px;
+    }
 
 }
 @media (max-width: 768px) {
@@ -659,7 +662,9 @@ cursor: pointer;
         -o-transition: all 1s ease; /* Opera */
         transition: all 1s ease;
         } 
-         
+        .media-container {
+        padding-top: 30px;
+        }
         .container-media-icons {
             color: rgb(224, 126, 36);
             text-align: center;
@@ -775,10 +780,6 @@ cursor: pointer;
     .foot .links a{
         color: #9f9f9f;
         padding-right: 15px;   
-    }
-
-    .media-container {
-        padding-top: 20px;
     }
 
 
