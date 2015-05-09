@@ -1,0 +1,262 @@
+
+<!DOCTYPE html><html ng-app="formation"><head lang="en"><meta charset="UTF-8"><title>ReactEurope - La première conf React.js à Paris.</title><meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,
+width=device-width, target-densityDpi=device-dpi"><!-- Vendors --><!-- <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/> --><link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"><link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oxygen&amp;text=ngeuropespeakerlocatioschedulesponsorabout"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro"><!-- Styles --><link rel="shortcut icon" href="images/branding/logo/ng-europe-logo.png"><link rel="stylesheet" href="styles/app.css"><!-- Firebase --><script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script><script type="text/javascript" src="https://cdn.firebase.com/js/simple-login/1.4.1/firebase-simple-login.js"></script><!-- AngularJS --><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script><!-- AngularFire Library --><script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script><script>var myApp = angular.module("formation", ["firebase"]);
+
+  function MainCtrl($scope, $firebase, $firebaseSimpleLogin) {
+    var societeRef = new Firebase("https://reacteurope.firebaseio.com/societe");
+    $scope.loginObj = $firebaseSimpleLogin(societeRef);
+   $scope.loginObj.$login('anonymous', {rememberMe: true}
+  ).then(function(user) {
+   $scope.societe = {uid: user.id, nstagiaires: 1, signataire: {iscontact: true}};
+   $scope.societe.signataire = {iscontact: true};
+   $scope.societe.stagiaires = [];
+   $scope.setStagiaires();
+}, function(error) {
+});
+    // Automatically syncs everywhere in realtime
+    $scope.societes = $firebase(societeRef);
+      $scope.societes.$remove();
+    $scope.setStagiaires = function(){
+        var rest = $scope.societe.nstagiaires - $scope.societe.stagiaires.length; 
+        if(rest>0){
+          for(var i=0; i<rest; i++){
+            $scope.societe.stagiaires.push({nom: ""});
+          }
+        } else if (rest<0) {
+          for(var i=0; i<-rest; i++){
+            $scope.societe.stagiaires.pop();
+          }
+        }
+    }
+
+    $scope.addSociete = function(){
+      $scope.societe.date_denregistrement = Date();
+      $scope.societes.$add($scope.societe);
+      $scope.done = true;
+    }
+
+  }</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42478610-3', '');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');</script></head><body ng-controller="MainCtrl"><div class="row"><div class="col-md-6 col-md-offset-3" ng-hide="done"><a href="https://www.react-europe.org"><img src="https://www.react-europe.org/images/reacteurope.png" alt="reacteurope" width=200></a><p>Grace à notre partenaire organisme de formation agréé <a href="http://www.oxiane.fr/" target="_blank">Oxiane</a>, vous pouvez utiliser la formation professionnelle pour financer vos places à la conférence <a href="https://www.react-europe.org" target="_blank">ReactEurope</a>.</p><p>Demandez conseil auprès de votre service RH ou Direction afin que ceux-ci vous aident à remplir le formulaire d'inscription ci dessous.</p><p>Ce formulaire sera envoyé à Oxiane qui prendra contact avec vous au plus tôt. N'hésitez pas à les contacter en cas de questions au 01 55 60 76 72</p><p>Votre ticket vous sera envoyé par courrier electronique.</p>
+ <h3>Inscription</h3>
+    <form ng-submit="addSociete()" class="form-horizontal" id="form-formation" role="form" method="POST" autocomplete>
+
+      <div id="formation-form-page-1">
+
+        <fieldset>
+
+          <h4>1. Société</h4>
+          <div class="form-group">
+            <label for="nom" class="col-sm-2 control-label">Nom</label>
+            <div class="col-sm-7">
+              <input required="" ng-model="societe.nom" type="text" name="nom" class="form-control" id="societe-nom" placeholder="Nom de la société">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="societe-adresse" class="col-sm-2 control-label">Adresse</label>
+            <div class="col-sm-7">
+              <input required="" ng-model="societe.adresse" type="text" name="societe-adresse" class="form-control" id="societe-adresse" placeholder="Adresse">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="zip" class="col-sm-2 control-label"></label>
+            <div class="col-sm-3">
+              <input required=""  ng-model="societe.codePostal" 
+type="text" name="zip" class="form-control" id="societe-codePostal" placeholder="Code Postal">
+            </div>
+            <div class="col-sm-4">
+              <input required="" type="text" ng-model="societe.ville" class="form-control" id="societe-ville" placeholder="Ville">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="societe-siret" class="col-sm-2 control-label">SIRET</label>
+            <div class="col-sm-4">
+              <input type="text" ng-model="societe.siret" class="form-control" id="societe-siret" placeholder="SIRET">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="opca" class="col-sm-2 control-label">OPCA</label>
+            <div class="col-sm-7">
+              <input type="text" ng-model="societe.opca" class="form-control" id="opca" placeholder="FAFIEC, AFDAS, ..." style="width:50%">
+              <span class="help-block" style="color:#666;font-size:14px;font-style:italic;">Laissez ce champ vide si pas de prise en charge ou si vous ne connaissez pas votre OPCA de prise en charge.</span>
+            </div>
+          </div>
+        </fieldset>
+
+
+        <fieldset>
+
+          <h4>2. Contact principal</h4>
+          <div class="form-group">
+            <label for="contact-nom" class="col-sm-2 control-label">Nom</label>
+            <div class="col-sm-2">
+              <select ng-model="societe.contact.civilite" class="form-control" id="contact-civilite">
+                <option value="Monsieur">Mr.</option>
+                <option value="Madame">Mme.</option>
+                <option value="Mademoiselle">Mlle.</option>
+              </select>
+            </div>
+            <div class="col-sm-5">
+              <input required="" ng-model="societe.contact.nom" type="text" class="form-control" id="contact-nom" placeholder="Nom">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-prenom" class="col-sm-2 control-label">Prénom</label>
+            <div class="col-sm-7">
+              <input required="" type="text" ng-model="societe.contact.prenom" class="form-control" id="contact-prenom" placeholder="Prénom">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-7">
+              <input required="" type="email" ng-model="societe.contact.email" class="form-control" id="contact-email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-tel" class="col-sm-2 control-label">Téléphone</label>
+            <div class="col-sm-4">
+              <input type="text" ng-model="societe.contact.tel" class="form-control" id="contact-tel" placeholder="Téléphone">
+            </div>
+          </div>
+
+        </fieldset>
+
+
+        <fieldset>
+
+          <h4>3. Signataire</h4>
+
+          <div class="form-group">
+            <label for="signataireiscontact" class="col-sm-2 control-label">&nbsp;</label>
+            <div class="col-sm-6">
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="1" ng-model="societe.signataire.iscontact" id="signataireiscontact" checked="checked">
+                  Identique au contact ci-dessus
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="formation-form-page-1-signataire" ng-hide="societe.signataire.iscontact">
+            <div class="form-group">
+              <label for="signataire-nom" class="col-sm-2 control-label">Nom</label>
+              <div class="col-sm-2">
+                <select ng-model="societe.signataire.civilite" class="form-control" id="signataire-civilite">
+                  <option value="Monsieur">Mr.</option>
+                  <option value="Madame">Mme.</option>
+                  <option value="Mademoiselle">Mlle.</option>
+                </select>
+              </div>
+              <div class="col-sm-5">
+                <input ng-model="societe.signataire.nom" type="text" class="form-control" id="signataire-nom" placeholder="Nom">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="signataire-prenom" class="col-sm-2 control-label">Prénom</label>
+              <div class="col-sm-7">
+                <input type="text" ng-model="societe.signataire.prenom" class="form-control" id="signataire-prenom" placeholder="Prénom">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="signataire-email" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-7">
+                <input type="email" ng-model="societe.signataire.email" class="form-control" id="signataire-email" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="signataire-tel" class="col-sm-2 control-label">Téléphone</label>
+              <div class="col-sm-4">
+                <input type="text" ng-model="societe.signataire.tel" class="form-control" id="signataire-tel" placeholder="Téléphone">
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+
+
+        <fieldset>
+
+          <h4>4. Stagiaires à inscrire</h4>
+
+          <div class="form-group">
+            <label for="nstagiaires" class="col-sm-2 control-label">Nombre</label>
+            <div class="col-sm-2">
+              <input min=0 type="number" ng-change="setStagiaires()" ng-model="societe.nstagiaires" class="form-control" id="nstagiaires" value="1" style="width:50px;">
+            </div>
+            <div class="col-sm-5" style="margin-left:-45px;">
+              stagiaire(s) : <strong><span id="price">520€ HT (624€ TTC)</span></strong>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+        <fieldset ng-repeat="stagiaire in societe.stagiaires track by $index">
+          <h4>Stagiaire #{{$index+1}}</h4>
+        <div class="form-group">
+          <label for="stagiaire.nom" class="col-sm-2 control-label">Nom</label>
+          <div class="col-sm-2">
+            <select ng-model="stagiaire.civilite" class="form-control" id="stagiaire.civilite">
+              <option value="Monsieur">Mr.</option>
+              <option value="Madame">Mme.</option>
+              <option value="Mademoiselle">Mlle.</option>
+            </select>
+          </div>
+          <div class="col-sm-5">
+            <input type="text" ng-model="stagiaire.nom" class="form-control" id="stagiaire.nom" placeholder="Nom">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="stagiaire.prenom" class="col-sm-2 control-label">Prénom</label>
+          <div class="col-sm-7">
+            <input type="text" ng-model="stagiaire.prenom" class="form-control" id="stagiaire.prenom" placeholder="Prénom">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="stagiaire.email" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-7">
+            <input type="email" ng-model="stagiaire.email" class="form-control" id="stagiaire.email" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group" ng-hide=true>
+            <label for="stagiaire.formationChatel" class="col-sm-2 control-label">&nbsp;</label>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="1" ng-model="stagiare.formationChatel" id="formationChatel" checked="checked">
+                    Inclure la formation du 21 Octobre (28 euros TTC)
+                </label>
+            </div>
+        </div>
+        </fieldset>
+
+      <fieldset>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-primary" ng-disabled="societe.nstagiares">Valider l'inscription</button>
+          </div>
+        </div>
+      </div>
+
+      </fieldset>
+    </form>
+  </div>
+</div>
+  <div class="col-md-6 col-md-offset-3" ng-show="done">
+      <div id="formation-form-page-3">
+        <fieldset>
+          <h4>Merci !</h4>
+          <p>Votre inscription a bien été validée. <a href="http://oxiane.com" target="_blank">Oxiane</a> prendra contact avec vous dans les jours qui viennent pour la suite des démarches.</p>
+          <p>A bientôt !</p>
+        </fieldset>
+      </div>
+</div>
+</div>
+</body>
+</html>
+
