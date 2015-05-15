@@ -294,6 +294,12 @@ section#home {
 
 }
 @media (max-width: 768px) {
+.icon-beers {
+    font-size: 30px;
+    border: 2px solid rgb(224, 126, 36);
+    padding-left: 12px;
+   
+}
 .sponsor-logo-diamond {
   width: 100%;
 }
@@ -599,6 +605,12 @@ cursor: pointer;
     }
 
     @media (min-width: 768px) {
+        .icon-beers {
+    font-size: 70px;
+    border: 4px solid rgb(224, 126, 36);
+    padding-left: 20px;
+   
+}
         .flex-item-sponsor-gold {
   margin-top: 10px;
   line-height: 150px;
@@ -1169,3 +1181,4 @@ margin-top: 3px;
     cursor: pointer;
     cursor: hand;
 }
+
