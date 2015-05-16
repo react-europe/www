@@ -370,6 +370,13 @@ section#home {
         margin-top: 10px;
         font-size: 14px;
     }
+    
+    .container-media-time {
+        color: rgb(224, 126, 36);
+        text-align: center;
+        font-size: 14px;
+    }
+    
     .img-circle-re {
         border: 2px solid rgb(224, 126, 36);
     }
@@ -681,6 +688,10 @@ cursor: pointer;
             color: rgb(224, 126, 36);
             text-align: center;
             margin-top: 10px;
+        }
+        .container-media-time {
+        color: rgb(224, 126, 36);
+        text-align: center;
         }
         .img-circle-re {
             border: 4px solid rgb(224, 126, 36);
