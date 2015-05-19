@@ -147,6 +147,14 @@ section#home {
   vertical-align: middle;
     padding: 5px 50px 5px 50px;
 }
+    
+.sponsor-startup-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+    padding: 14px 30px 14px 30px;
+}
 
 .sponsor-logo-gold {
   width: 320px;
@@ -159,6 +167,10 @@ section#home {
     
 .sponsor-logo-bronze{
   width: 160px;
+}
+    
+.sponsor-logo-startup {
+  width: 100px;
 }
 
 .supporter-logo {
@@ -205,12 +217,22 @@ section#home {
   background-color: #fff;
 }
 
+.sponsor-startup-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+    width: 120px;
+}
+
 .sponsor-logo-diamond {
   width: 100%;
 }
        
 .sponsor-logo-bronze {
   width: 50%;
+}
+
+.sponsor-logo-startup {
+  width: 60%;
 }
 
 .supporter-logo {
@@ -423,6 +445,10 @@ section#home {
           line-height: 90px;
         width: 152px;
         margin-left: 10px;
+        }
+    .flex-item-sponsor-startup {
+          margin-top: 10px;
+          line-height: 60px;
         }
     #map-dialog{
         background: #FFF;
@@ -715,6 +741,10 @@ cursor: pointer;
         .flex-item-sponsor-bronze {
           margin-top: 10px;
           line-height: 100px;
+        }
+        .flex-item-sponsor-startup {
+          margin-top: 10px;
+          line-height: 45px;
         }
         .supporters-flex-container {
           margin-top: -30px;
