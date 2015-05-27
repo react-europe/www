@@ -153,7 +153,7 @@ section#home {
   background-color: #fff;
   display: table-cell;
   vertical-align: middle;
-    padding: 14px 30px 14px 30px;
+    padding: 20px 36px;
 }
 
 .sponsor-logo-gold {
@@ -170,7 +170,7 @@ section#home {
 }
     
 .sponsor-logo-startup {
-  width: 100px;
+  width: 130px;
 }
 
 .supporter-logo {
@@ -232,7 +232,7 @@ section#home {
 }
 
 .sponsor-logo-startup {
-  width: 60%;
+  width: 70%;
 }
 
 .supporter-logo {
@@ -354,7 +354,10 @@ section#home {
     margin-left: 5%;
     margin-right: 5%;
 }
-
+    
+.yahoo-supporter {
+        margin-top: 60px;
+}
 
     .eventlama-ticker-btn{
         width: 225px !important;
@@ -448,7 +451,7 @@ section#home {
         }
     .flex-item-sponsor-startup {
           margin-top: 10px;
-          line-height: 60px;
+          line-height: 70px;
         }
     #map-dialog{
         background: #FFF;
@@ -742,10 +745,7 @@ cursor: pointer;
           margin-top: 10px;
           line-height: 100px;
         }
-        .flex-item-sponsor-startup {
-          margin-top: 10px;
-          line-height: 45px;
-        }
+        
         .supporters-flex-container {
           margin-top: -30px;
           list-style: none;
