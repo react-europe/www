@@ -341,6 +341,7 @@ section#home {
     padding: 10px !important;
     margin: 0 !important;
 }
+
 .flex-item-sponsor-diamond, .flex-item-sponsor-diamond .front, .flex-item-sponsor-diamond .back {
 	width: 100%;
 	min-height: 190px;
@@ -1146,6 +1147,8 @@ margin-top: 3px;
 
 	transition: 0.6s;
 	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 
 	position: relative;
 }

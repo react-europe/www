@@ -3,12 +3,12 @@
 	font-style: normal;
 	font-weight: 300,400,700;
 	src:
-		local('Alegreya Sans Light
-Alegreya Sans
-Alegreya Sans Bold'),
-		local('AlegreyaSans-Light
-AlegreyaSans-Regular
-AlegreyaSans-Bold'),
+		local('Alegreya Sans Light'),
+            local('Alegreya Sans'),
+local('Alegreya Sans Bold'),
+		local('AlegreyaSans-Light'),
+local('AlegreyaSans-Regular'),
+local('AlegreyaSans-Bold'),
 		/* from http://fonts.gstatic.com/s/alegreyasans/v3/KYNzioYhDai7mTMnx_gDgrSL3g004LNKkgHM9a6X73A.eot */
 		url('Alegreya_Sans_300,400,700_latin.eot?#iefix') format('embedded-opentype'),
 		/* from http://fonts.gstatic.com/s/alegreyasans/v3/11EDm-lum6tskJMBbdy9aaWGgEO1vGR9ucXjKCo8vxU.woff
