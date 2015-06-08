@@ -164,6 +164,11 @@ section#home {
   margin-top: 40px;
   width: 500px;
 }
+
+.sponsor-logo-platinium {
+  margin-top: 80px;
+  width: 400px;
+}
     
 .sponsor-logo-bronze{
   width: 160px;
@@ -181,7 +186,7 @@ section#home {
 
 @media (max-width: 992px) {
     .supporter {
-        margin-top: 10px;
+        margin-top: 40px;
     }
 .sponsors-flex-container {
   display: -webkit-box;
@@ -225,6 +230,10 @@ section#home {
 
 .sponsor-logo-diamond {
   width: 100%;
+}
+
+.sponsor-logo-platinium {
+  width: 90%;
 }
        
 .sponsor-logo-bronze {
@@ -285,9 +294,6 @@ section#home {
         height:50px;
         background: #e7e7e7;
     }
-    .supporter {
-        margin-top: 50px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -323,17 +329,27 @@ section#home {
    
 }
 .sponsor-logo-diamond {
-  width: 100%;
+  width: 90%;
+}
+.sponsor-logo-platinium {
+  width: 90%;
 }
 .sponsor-logo-gold {
-  width: 70%;
-  margin-top: 30px;
+  width: 90%;
+  margin-top: 45px;
 }
 .flex-item-sponsor-diamond {
     width: 100%;
   line-height: 190px;
   text-align: center;
 }
+.flex-item-sponsor-platinium {
+    width: 90%;
+  line-height: 150px;
+  text-align: center;
+}
+.diamond-blurb, 
+.platinium-blurb, 
 .gold-blurb {
     line-height: 1.0em !important;
     font-size: 12px;
@@ -347,17 +363,25 @@ section#home {
 	min-height: 190px;
     text-align: center;
 }
-
-.flex-item-sponsor-gold, .flex-item-sponsor-gold .front, .flex-item-sponsor-gold .back {
+    
+.flex-item-sponsor-platinium, .flex-item-sponsor-platinium .front, .flex-item-sponsor-platinium .back {
 	width: 90%;
-	min-height: 100px;
+	min-height: 150px;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
 }
+
+.flex-item-sponsor-gold, .flex-item-sponsor-gold .front, .flex-item-sponsor-gold .back {
+	width: 80%;
+	min-height: 120px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
     
 .yahoo-supporter {
-        margin-top: 60px;
+        margin-top: 40px;
 }
 
     .eventlama-ticker-btn{
@@ -663,16 +687,23 @@ cursor: pointer;
         .flex-item-sponsor-diamond .back p {
         margin-top: 8px !important;
             line-height: 1.2;
-            text-align: left;
+        }
+        .flex-item-sponsor-platinium .back p {
+        margin-top: 8px !important;
+            line-height: 1.2;
         }
         .flex-item-sponsor-gold .back p {
         margin-top: 8px !important;
             line-height: 1.2;
-            text-align: left;
         }
         .flex-item-sponsor-diamond, .flex-item-sponsor-diamond .front, .flex-item-sponsor-diamond .back {
 	width: 590px;
 	height: 260px;
+    text-align: center;
+}
+        .flex-item-sponsor-platinium, .flex-item-sponsor-platinium .front, .flex-item-sponsor-platinium .back {
+	width: 500px;
+	height: 200px;
     text-align: center;
 }
         .schedule-table thead {
@@ -733,7 +764,9 @@ cursor: pointer;
             width: 600px; 
             height: 500px;
         }
-                .ticket-modal {
+                .ticket-modal,
+        .talk-modal,
+        .job-modal {
             width: 700px;
         }
          .foot-speaker2 {
@@ -779,7 +812,8 @@ cursor: pointer;
         }
 
     }
- #talkModalBody .foot {
+ #talkModalBody .foot,
+#jobModalBody .foot{
             text-align: center;
         }
        
@@ -788,7 +822,8 @@ cursor: pointer;
         }
        
 
-        #talkModalLabel {
+        #talkModalLabel,
+#jobModalLabel {
             text-align: center;
         }
     .media-body-re {
@@ -831,7 +866,7 @@ cursor: pointer;
         margin-right: 5px;
     }
 
-    .foot .links a{
+    .foot .links a {
         color: #9f9f9f;
         padding-right: 15px;   
     }
@@ -890,7 +925,6 @@ cursor: pointer;
 
     #sponsors p {
         text-align: center;
-        margin-top: 30px;
         color: #2c3e50;
     }
 
@@ -899,9 +933,6 @@ cursor: pointer;
     }
 
     footer {
-        background-color: #f0f0f0;
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
         padding: 30px 0;
     }
 
@@ -923,7 +954,10 @@ cursor: pointer;
     }
 
     section#organizers {
-        padding-bottom: 60px;
+      background-color: #f0f0f0;
+  border-top: 1px solid #ddd; 
+   border-bottom: 1px solid #ddd;
+  padding-bottom: 70px;
     }
 
     #organizers .img-circle-org {
@@ -1225,3 +1259,12 @@ margin-top: 3px;
     cursor: hand;
 }
 
+section#job-board {
+        padding-bottom: 70px;
+    }
+
+
+.img-sponsor-job-board {
+    width: 150px;
+    margin-bottom: 20px;
+}

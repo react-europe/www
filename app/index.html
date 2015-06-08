@@ -2112,28 +2112,6 @@ This year we are introducing support for React Native and we are working closely
      <section id="sponsors">
          <div class="container">
              <h2 class="thin title">Sponsors</h2>
-         
-              <!-- <h3>Diamond</h3>
-                <div class="row sponsors-flex-container">
-                     <div class="flex-item-sponsor-diamond">
-                 <a target="blank" href="">
-                           <div class="sponsor-diamond-wrapper-img"> 
-                                  <img class="sponsor-logo-diamond" src="" alt="">
-                                 </div>
-                        </a>
-               </div>
-                </div>
-              <h3>Platinum</h3>
-                <div class="row sponsors-flex-container">
-                     <div class="flex-item-sponsor-platinum">
-                 <a target="blank" href="">
-                           <div class="sponsor-platinum-wrapper-img"> 
-                                  <img class="sponsor-logo-platinum" src="" alt="">
-                                 </div>
-                        </a>
-               </div>
-                </div> -->
-             <div class=clearfix>
 <h3>Diamond</h3>
     <div class="row sponsors-flex-container">
     <div class="flip-container flex-item-sponsor-diamond" ontouchstart="this.classList.toggle('hover');">
@@ -2142,7 +2120,7 @@ This year we are introducing support for React Native and we are working closely
 <img class="sponsor-logo-diamond" src="images/rangle.png" alt="Rangle.io"> 
       </div>
     <div class="back">
-        <p class="gold-blurb"><a href="http://rangle.io/" target="_blank">
+        <p class="diamond-blurb"><a href="http://rangle.io/" target="_blank">
         Rangle.io is North America's leading next-generation full-stack JavaScript design and development firm. Dedicated to well-crafted responsive web and mobile applications, we only work with modern JavaScript, HTML5, and CSS.
         Our specialities include Angular, React, Node, Ionic, Meteor, Backbone and other modern JavaScript technologies. As strong functional programming advocates, we lean towards functional reactive programming (FRP) for more complex applications.
         We are a pioneer in Lean UX and our integrated Agile design and development methodologies allow us to start delivering value quickly and continuously, enabling our clients to quickly test and validate their features and business model on an ongoing basis.
@@ -2152,7 +2130,30 @@ This year we are introducing support for React Native and we are working closely
   </div>
 </div>
 </div>
-                              <div class=clearfix>
+             <div class=clearfix>
+                
+<h3>Platinum</h3>
+    <div class="row sponsors-flex-container">
+    <div class="flip-container flex-item-sponsor-platinium" ontouchstart="this.classList.toggle('hover');">
+  <div class="flipper">
+    <div class="front">
+<img class="sponsor-logo-platinium" src="images/automattic.png" alt="Automattic"> 
+      </div>
+    <div class="back">
+        <p class="platinium-blurb"><a href="http://automattic.com/" target="_blank">
+        Automattic is a distributed company, democratizing publishing and development.
+
+We are the people behind WordPress.com, which serves more than 15.8 billion pages a month, as well as a host of other popular services, such as Akismet, Jetpack, and VaultPress.  We are strong believers in Open Source, and the vast majority of our work is available under licenses like the GPL.
+
+Our team members hail from nearly every continent and 36 countries around the world. We are hiring!
+
+Learn more at http://automattic.com.
+        </a></p>
+    </div>
+  </div>
+</div>
+</div>
+                  <div class=clearfix>
 
                  <h3>Gold</h3>
                 <div class="row sponsors-flex-container">
@@ -2215,7 +2216,7 @@ We love React.js and run the brilliant React meetup in London.</a></p>
                    <img class="supporter-logo" src="images/eventlama.png" alt="EventLama">
                  </a>
                </div>
-                   <div class="flex-item-supporters supporter">
+                 <div class="flex-item-supporters supporter hidden-xs">
                  <a target="blank" href="https://www.oxiane.com">
                    <img class="supporter-logo" src="images/oxiane.png" alt="Oxiane">
                  </a>
@@ -2227,7 +2228,7 @@ We love React.js and run the brilliant React meetup in London.</a></p>
                </div>
                  <div class="flex-item-supporters supporter">
                  <a target="blank" href="https://www.mozilla.org/en-US/">
-                   <img class="supporter-logo" src="images/mozilla-logo.png" alt="Mozilla">
+                   <img class="supporter-logo" src="images/mozilla_wordmark.png" alt="Mozilla">
                  </a>
                </div>
                  <div class="flex-item-supporters yahoo-supporter">
@@ -2240,6 +2241,11 @@ We love React.js and run the brilliant React meetup in London.</a></p>
                    <img class="supporter-logo" src="images/thinkmill.png" alt="Thinkmill">
                  </a>
                </div>
+                 <div class="flex-item-supporters supporter visible-xs">
+                 <a target="blank" href="https://www.oxiane.com">
+                   <img class="supporter-logo" src="images/oxiane.png" alt="Oxiane">
+                 </a>
+               </div>
              </div>
                      
            <p>Want to get involved and help support ReactEurope?  We'd love to hear from you.</p>
@@ -2248,6 +2254,16 @@ We love React.js and run the brilliant React meetup in London.</a></p>
         </div>
      </div>
  </section>
+                 
+<section id="job-board">
+         <div class="container">
+             <h2 class="thin title">Job Board</h2>
+             <img class="img-sponsor-job-board" src="images/automattic.png" alt="Automattic"></img>
+             <ul>
+                <li><a href="http://automattic.com/work-with-us/" class="toggle-modall" data-toggle="modall" data-target="#jobModalLabell">Work with us</a></li>
+             </ul>
+        </div>
+</section> 
 
  <section id="organizers">
          <div class="container">
@@ -2315,6 +2331,7 @@ We love React.js and run the brilliant React meetup in London.</a></p>
   </div>
 </div> <!-- Modal -->
 </div>
+             
 <div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -2419,11 +2436,12 @@ We love React.js and run the brilliant React meetup in London.</a></p>
   </div>
 </div> <!-- modal -->
 </div>
-<!-- Modal diversity tickets-->
-<div id="xxx">
+             
+ <!-- Modal description talk-->
+<div>
 <div class="modal fade" id="talkModal" tabindex="-1" role="dialog" aria-labelledby="talkModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content ticket-modal">
+    <div class="modal-content talk-modal">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="talkModalLabel">Talk details</h4>
@@ -2435,23 +2453,21 @@ We love React.js and run the brilliant React meetup in London.</a></p>
       </div>
     </div>
   </div>
-</div>
+</div> <!-- Modal -->
 </div> 
-      <!-- Modal -->
-<!-- Modal diversity tickets-->
+             
+<!-- Modal job board-->
 <div>
-<div class="modal fade" id="diversityModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
+<div class="modal fade" id="jobModalLabel" tabindex="-1" role="dialog" aria-labelledby="jobModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content ticket-modal">
+    <div class="modal-content job-modal">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="ticketModalLabel">Get tickets</h4>
+        <h1 class="modal-title" id="jobModalLabel">Rangle.io</h1>
       </div>
-      <div class="modal-body">
-          <div class="ss-top-of-page">
-              <div class="ss-form-heading">
-                  <h1 class="ss-form-title" dir="ltr">ReactEurope Diversity Tickets</h1>
-<iframe src="https://docs.google.com/forms/d/19HykXCnot9FXfdhBGyfU5-Txe_VM4y1QanE1JefGJk4/viewform?embedded=true" class="google-form" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      <div class="modal-body clearfix" id="jobModalBody">
+          <h4 class="modal-title">CAREERS</h4>
+          <h3 class="media-heading media-heading-re">Senior Agile UX Designer</h3>  
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -2459,14 +2475,14 @@ We love React.js and run the brilliant React meetup in London.</a></p>
     </div>
   </div>
 </div> <!-- Modal -->
-     </div>
-      <!-- Modal description talk-->
+</div>
 
 
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../bower_components/appcache-nanny/appcache-nanny.js"></script>
     <!-- endbower -->
     <!-- endbuild -->

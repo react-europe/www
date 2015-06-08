@@ -21,7 +21,7 @@ $('.nav a').on('click', function(){
    }
    });
 
-$(".toggle-modal").click(function(){
+$(".toggle-modal[type=button]").click(function(){
     $("#talkModal").modal();
     $("#talkModalBody").html($($(this).data("target")).html());
 })
