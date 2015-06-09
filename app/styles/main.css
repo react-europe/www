@@ -155,6 +155,10 @@ section#home {
   vertical-align: middle;
     padding: 20px 36px;
 }
+    
+#startup-wrapper-lodgify {
+    padding: 25px 36px;
+}
 
 .sponsor-logo-gold {
   width: 320px;
@@ -779,7 +783,9 @@ cursor: pointer;
           margin-top: 10px;
           line-height: 100px;
         }
-        
+        .flex-item-sponsor-startup {
+          margin-top: 10px;
+        }
         .supporters-flex-container {
           margin-top: -30px;
           list-style: none;
@@ -1266,5 +1272,15 @@ section#job-board {
 
 .img-sponsor-job-board {
     width: 150px;
-    margin-bottom: 20px;
 }
+
+.container-job-board-brand {
+    margin-top: 30px;
+}
+
+.job-board-wrapper-img {
+        border: solid 1px #bdbdbd;
+  display: table-cell;
+  vertical-align: middle;
+    padding: 10px;
+    }
