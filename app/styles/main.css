@@ -157,7 +157,11 @@ section#home {
 }
     
 #startup-wrapper-lodgify {
-    padding: 25px 36px;
+    padding: 26px 36px;
+}
+
+#startup-wrapper-maltem {
+    padding: 15px 36px;
 }
 
 .sponsor-logo-gold {
@@ -179,7 +183,7 @@ section#home {
 }
     
 .sponsor-logo-startup {
-  width: 130px;
+  width: 150px;
 }
 
 .supporter-logo {
