@@ -146,7 +146,13 @@ section#home {
   vertical-align: middle;
     padding: 5px 50px 5px 50px;
 }
-    
+    .sponsor-silver-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+    padding: 10px 50px 10px 50px;
+}
 .sponsor-startup-wrapper-img {
   border: solid 1px #bdbdbd;
   background-color: #fff;
@@ -181,6 +187,9 @@ section#home {
   width: 160px;
 }
     
+ .sponsor-logo-silver {
+  width: 240px;
+}   
 .sponsor-logo-startup {
   width: 150px;
 }
@@ -298,6 +307,15 @@ section#home {
 }
 
 @media (max-width: 767px) {
+    .sponsor-silver-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+        width: 180px;
+        line-height: 100px;
+}
+    .sponsor-logo-silver {
+  width: 90%;
+}
     #home {
         margin-top: 0px;
     }
@@ -323,6 +341,7 @@ section#home {
 
 }
 @media (max-width: 768px) {
+    
     .sponsor-startup-wrapper-img {
   border: solid 1px #bdbdbd;
   background-color: #fff;
@@ -1306,6 +1325,19 @@ and (-webkit-min-device-pixel-ratio: 1)  {
   width: 300px;
   margin-left: 10px;
 }
+    .flex-item-sponsor-silver {
+  width: 350px;
+  margin-left: 10px;
+}
+    .sponsor-silver-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+        width: 180px;
+        line-height: 100px;
+}
+    .sponsor-logo-silver {
+  width: 70%;
+}
     .sponsor-startup-wrapper-img {
   border: solid 1px #bdbdbd;
   background-color: #fff;
@@ -1314,6 +1346,9 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 }
 
 @media (min-width: 1024px) {
+    .flex-item-sponsor-silver {
+          line-height: 120px;
+        }
 .navbar-brand {
     font-size: 23px;
 }
