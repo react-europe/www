@@ -197,12 +197,69 @@ section#home {
 .supporter-logo {
     max-width: 100px;
 }
+    flex-item-sponsor-gold, .flex-item-sponsor-gold .back {
+  width: 420px;
+  height: 160px;
+  text-align: center;
+}
 
+}
+@media (min-width: 800px) and (max-width: 992px) { 
+    #sponsors p {
+  margin-top: 20px;
+}
+    .flex-item-sponsor-startup {
+   margin-top: 10px;
+          line-height: 70px;
+}
+        .sponsor-startup-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+  width: 180px;
+}
+    .sponsor-bronze-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+    width: 300px;
+}
+    .sponsor-silver-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+        line-height: 150px;
+}
+    .flex-item-sponsor-silver {
+          line-height: 90px;
+        width: 350px;
+        }
+    .flex-item-sponsor-gold {
+          line-height: 160px;
+        width: 450px !important;
+        }
+    .sponsor-logo-gold {
+        width: 90%;
+    }
+    .flex-item-sponsor-platinium {
+          line-height: 250px;
+        height: 250px !important;
+        }
+    .sponsor-logo-diamond {
+  width: 90% !important;
+  margin-top: 35px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 993px){
+    #yahoo-logo {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 992px) {
     .supporter {
         margin-top: 40px;
+    }
+    #fb-logo {
+        margin-top: 22px;
     }
 .sponsors-flex-container {
   display: -webkit-box;
@@ -233,11 +290,6 @@ section#home {
     padding: 5px;
 }
     
-.sponsor-bronze-wrapper-img {
-  border: solid 1px #bdbdbd;
-  background-color: #fff;
-}
-
 .sponsor-logo-diamond {
   width: 100%;
 }
@@ -247,13 +299,13 @@ section#home {
 }
        
 .sponsor-logo-bronze {
-  width: 50%;
-}
-
-.sponsor-logo-startup {
   width: 70%;
 }
 
+.sponsor-logo-startup {
+  width: 80%;
+}
+    
 .supporter-logo {
     max-width: 75px;
 }
@@ -307,12 +359,6 @@ section#home {
 }
 
 @media (max-width: 767px) {
-    .sponsor-silver-wrapper-img {
-  border: solid 1px #bdbdbd;
-  background-color: #fff;
-        width: 180px;
-        line-height: 100px;
-}
     .sponsor-logo-silver {
   width: 90%;
 }
@@ -340,8 +386,35 @@ section#home {
     }
 
 }
+
+@media (min-width: 300px) and (max-width: 599px){
+.sponsor-logo-gold {
+  width: 90%;
+  margin-top: 45px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 769px){
+.flex-item-sponsor-silver {
+    width: 280px;
+}
+.sponsor-logo-gold {
+  width: 90%;
+  margin-top: 45px;
+}
+    #fb-logo {
+        margin-top: 22px;
+    }
+}
+
 @media (max-width: 768px) {
-    
+    #sponsor-logo-maltem {
+  width: 98%;
+} 
+    .sponsor-bronze-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+}
     .sponsor-startup-wrapper-img {
   border: solid 1px #bdbdbd;
   background-color: #fff;
@@ -359,10 +432,7 @@ section#home {
 .sponsor-logo-platinium {
   width: 90%;
 }
-.sponsor-logo-gold {
-  width: 90%;
-  margin-top: 45px;
-}
+
 .flex-item-sponsor-diamond {
     width: 100%;
   line-height: 190px;
@@ -488,10 +558,8 @@ section#home {
         text-align: center;
     }
     .flex-item-sponsor-bronze {
-          margin-top: 10px;
           line-height: 90px;
         width: 152px;
-        margin-left: 10px;
         }
     .flex-item-sponsor-startup {
           margin-top: 10px;
@@ -685,7 +753,10 @@ cursor: pointer;
     }
 
     @media (min-width: 768px) {
-.flex-item-sponsor-gold, .flex-item-sponsor-gold .back {
+        .ticket-type {
+        min-height: 150px;
+    }
+        .flex-item-sponsor-gold, .flex-item-sponsor-gold .back {
 	width: 420px;
 	height: 160px;
     text-align: center;
@@ -990,12 +1061,6 @@ cursor: pointer;
     text-align: left;
 }
 
-@media (min-width: 768px){
-    .ticket-type {
-        min-height: 150px;
-    }
-}
-
 @media (max-width: 769px){
     .ticket-offset {
         padding-bottom: 5px;
@@ -1267,9 +1332,10 @@ section#job-board {
     margin-top: 10px;
 }
 
+
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+and (max-device-width : 769px) 
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 1)  { 
     .navbar-brand {
@@ -1322,26 +1388,65 @@ and (-webkit-min-device-pixel-ratio: 1)  {
   line-height: 115px;
 }
     .flex-item-sponsor-bronze {
-  width: 300px;
-  margin-left: 10px;
-}
-    .flex-item-sponsor-silver {
-  width: 350px;
-  margin-left: 10px;
+  width: 230px;
 }
     .sponsor-silver-wrapper-img {
   border: solid 1px #bdbdbd;
   background-color: #fff;
-        width: 180px;
-        line-height: 100px;
+        line-height: 150px;
 }
     .sponsor-logo-silver {
-  width: 70%;
+  width: 90%;
 }
     .sponsor-startup-wrapper-img {
   border: solid 1px #bdbdbd;
   background-color: #fff;
   width: 180px;
+}
+}
+
+@media only screen 
+and (min-device-width : 600px) 
+and (max-device-width : 601px) 
+and (orientation : portrait)
+    and (-webkit-min-device-pixel-ratio: 1)  {
+.sponsor-startup-wrapper-img {
+  width: 200px;
+}
+    .sponsor-silver-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+  line-height: 120px;
+  width: 310px;
+}
+     .sponsor-logo-gold {
+  width: 90%;
+  margin-top: 25px;
+}
+    .sponsor-bronze-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+}
+        .flex-item-sponsor-bronze .front, .flex-item-sponsor-bronze .back {
+  width: 80%;
+  min-height: 120px;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+        .flex-item-sponsor-bronze {
+  margin-top: 10px;
+  line-height: 90px;
+  width: 280px;
+}
+    }
+
+@media (max-width: 599px) {
+    .sponsor-silver-wrapper-img {
+  border: solid 1px #bdbdbd;
+  background-color: #fff;
+  width: 190px; 
+  line-height: 100px;
 }
 }
 
