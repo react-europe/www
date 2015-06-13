@@ -390,7 +390,7 @@ section#home {
 @media (min-width: 300px) and (max-width: 599px){
 .sponsor-logo-gold {
   width: 90%;
-  margin-top: 45px;
+  margin-top: 55px;
 }
 }
 
@@ -438,11 +438,7 @@ section#home {
   line-height: 190px;
   text-align: center;
 }
-.flex-item-sponsor-platinium {
-    width: 90%;
-  line-height: 150px;
-  text-align: center;
-}
+
 .diamond-blurb, 
 .platinium-blurb, 
 .gold-blurb {
@@ -467,9 +463,12 @@ section#home {
     margin-right: 5%;
 }
 
+    .flex-item-sponsor-platinium, .flex-item-sponsor-platinium .front {
+    line-height: 150px;
+    }
 .flex-item-sponsor-gold, .flex-item-sponsor-gold .front, .flex-item-sponsor-gold .back {
 	width: 80%;
-	min-height: 120px;
+    min-height: 145px;
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -1379,6 +1378,14 @@ and (-webkit-min-device-pixel-ratio: 1)  {
   margin-right: 5%;
   line-height: 200px;
 }
+    
+     .flex-item-sponsor-platinium .back {
+	width: 90%;
+	min-height: 200px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .flex-item-sponsor-gold .front {
   width: 80%;
   min-height: 160px;
@@ -1386,6 +1393,14 @@ and (-webkit-min-device-pixel-ratio: 1)  {
   margin-left: 10%;
   margin-right: 10%;
   line-height: 115px;
+}
+    
+         .flex-item-sponsor-gold .back {
+  width: 80%;
+  min-height: 160px;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
     .flex-item-sponsor-bronze {
   width: 230px;
@@ -1445,8 +1460,8 @@ and (orientation : portrait)
     .sponsor-silver-wrapper-img {
   border: solid 1px #bdbdbd;
   background-color: #fff;
-  width: 190px; 
-  line-height: 100px;
+  width: 180px; 
+  line-height: 120px;
 }
 }
 
@@ -1500,5 +1515,10 @@ and (orientation : portrait)
     .sponsor-logo-gold {
   width: 70%;
   margin-top: 50px;
+}
+}
+@media (max-width: 768px) {
+.flex-item-sponsor-platinum .front   {
+    line-height: 150px !important;
 }
 }
