@@ -52,20 +52,15 @@
     <div class="navbar-collapse collapse" >
       <ul class="nav navbar-nav ">
         <li class="active-re hidden-sm hide"><a href="#about">About</a></li>
-        <li><a href="#speakers">Speakers</a></li>
-         <li><a href="#schedule">Schedule</a></li>
-         <li><a href="#tickets">Tickets</a></li>
-        <li><a class="hidden-sm formation-link hidden" href="/formation.html"
-               target=_blank data-toggle="tooltip" data-placement="bottom"
-               title="Bénéficiez de l'aide à la formation professionnelle grâce à Oxiane! Pour tout renseignement, appelez le 01 55 60 76 72.">Formation</a></li>
+         <li><a href="#" role="button" data-toggle="modal" data-target="#ticketModal">Tickets</a></li>
            <li><a href="/2015.html">2015</a></li>
         </ul>
 
-      <ul class="nav navbar-nav navbar-right">
+      <!-- <ul class="nav navbar-nav navbar-right">
         <li class="active-re hidden-sm">
             <a class="navbar-tickets" href="#" role="button" data-toggle="modal" data-target="#ticketModal">Tickets »</a>
           </li>
-      </ul>
+      </ul> -->
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
@@ -97,8 +92,17 @@
 	<div class="container">
     <div class="row">
 	    <h2 class="title thin">About React.js</h2>
-        <div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
-          <p>ReactEurope will be back in 2016 in Paris on 2nd and 3rd of June. In the meantime, enjoy our 2015 edition videos:</p>
+        <div class="col-xs-12 col-md-offset-2 col-md-8 text-center lead">
+            <h1 id="thank-title">Thank You!</h1>
+          <p class="text-thank">
+              ReactEurope will be back in 2016 in Paris on 2nd and 3rd of June.<br>
+              Be the first to know when tickets are available!
+              <span class="wrapper-btn-thank">
+                <a class="btn eventlama-btn" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
+Get Notified when tickets go on sales</a>
+            </span>
+				In the meantime, enjoy our 2015 edition videos:<br>
+            </p>
           <iframe width="320" height="315" src="https://www.youtube.com/embed/videoseries?list=PLCC436JpVnK0Phxld2dD4tM4xPMxJCiRD" frameborder="0" allowfullscreen></iframe>
           <iframe width="320" height="315" src="https://www.youtube.com/embed/videoseries?list=PLCC436JpVnK3HvUSAHpt-LRJkIK8pQG6R" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -109,10 +113,7 @@
               
 	  </div>
 	</div>
-                <div class="text-center wrapper-btn">
-            <a class="btn eventlama-btn" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
-Get Notified when tickets go on sales</a>
-        </div>
+               
         </div>
     </section>
 

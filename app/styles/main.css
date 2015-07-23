@@ -1000,9 +1000,6 @@ cursor: pointer;
         color: #2c3e50;
     }
 
-    .wrapper-btn {
-        margin-top: 30px;
-    }
 
     footer {
         padding: 30px 0;
@@ -1540,3 +1537,25 @@ and (orientation : portrait)
     line-height: 150px !important;
 }
 }
+
+.wrapper-btn {
+  margin-top: 30px;
+}
+
+
+
+#thank-title {
+  font-size: 60px;
+  color: #3498db;
+  margin: 0 0 30px;
+}
+
+.text-thank {
+  color: #212121;
+  line-height: 1.7;
+}
+
+.wrapper-btn-thank {
+        display: block;
+        margin: 30px 0px 30px;
+    }
