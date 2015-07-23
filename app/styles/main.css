@@ -1553,9 +1553,67 @@ and (orientation : portrait)
 .text-thank {
   color: #212121;
   line-height: 1.7;
+    margin-bottom: 13px;
 }
 
 .wrapper-btn-thank {
         display: block;
-        margin: 30px 0px 30px;
+        margin: 15px 0px 15px;
     }
+
+ section#social-widget {
+        background-color: #f0f0f0;
+    }
+
+.social-area-first {
+  background: #fff;
+}
+
+#facebook-box {
+    margin-top: 0px;
+}
+
+#footer-bg {
+        padding: 30px 0;
+    background-color: #f0f0f0;
+    }
+
+#social-widget-title {
+    color: #e0e0e0;
+}
+
+#blog-section-title {
+    color: #fff;
+}
+
+.footer-more-link {
+  display: block;
+  text-transform: uppercase;
+  color: #1a9fd5;
+  margin-top: 9px;
+  line-height: 24px;
+  border-top: 1px solid #1a9fd5;
+  padding: 13px 0;
+    font-weight: bolder;
+}
+
+a.footer-more-link:hover, 
+a.footer-more-link:focus {
+  color: #56c9f8;
+    text-decoration: none;
+}
+
+a.blog-post-title {
+ color: #2c3e50;
+}
+
+a.blog-post-title:hover,
+a.blog-post-title:focus {
+     text-decoration: none;
+}
+
+.jumbotron-bg {
+    background-image: url(/images/jumbotron-bg.jpg);
+    background-position:80% 60%;
+}
+
