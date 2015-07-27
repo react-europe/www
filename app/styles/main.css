@@ -98,7 +98,7 @@ section#home {
         padding: 25px;
     }
 
-    .img-circle{
+    .img-circle-reacteurope {
         width:100px;
         height:100px;
         background: #e7e7e7;
@@ -365,7 +365,7 @@ section#home {
         background: #FFF;
         padding: 25px;
     }
-    .img-circle{
+    .img-circle-reacteurope {
         width:50px;
         height:50px;
         background: #e7e7e7;
@@ -586,7 +586,7 @@ section#home {
         background: #FFF;
         padding: 30px;
     }
-    .img-circle {
+    .img-circle-reacteurope {
         width:50px;
         height:50px;
         background: #e7e7e7;
@@ -1543,22 +1543,14 @@ and (orientation : portrait)
 }
 
 
-
-#thank-title {
-  font-size: 60px;
-  color: #3498db;
-  margin: 0 0 30px;
-}
-
 .text-thank {
-  color: #212121;
   line-height: 1.7;
-    margin-bottom: 13px;
+    text-align: center;
 }
 
-.wrapper-btn-thank {
-        display: block;
-        margin: 15px 0px 15px;
+.wrapper-btn-jb {
+        margin-top: 90px;
+    text-align: right;
     }
 
  section#social-widget {
@@ -1570,11 +1562,11 @@ and (orientation : portrait)
 }
 
 #facebook-box {
-    margin-top: 0px;
+      margin-top: 72px;
 }
 
 #footer-bg {
-        padding: 30px 0;
+        padding: 10px 0;
     background-color: #f0f0f0;
     }
 
@@ -1606,7 +1598,8 @@ a.footer-more-link:focus {
 
 .jumbotron-bg {
     background-image: url(/images/jumbotron-bg.jpg);
-    background-position:80% 60%;
+    background-position: 40% 30%;
+    height: 515px;
 }
 
 
@@ -1716,18 +1709,108 @@ a.footer-more-link:focus {
 
 
 .fa-testimonials {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 50px;
   color: #1e90ff;
 }
 
 .social-area-second .footer-social {
     float: left;
-    margin-top: 100px;
+    margin-top: 20px;
+}
+
+.social-area-second .code-re {
+float: right;
+  font-size: 15px;
+  margin-top:  20px;
 }
 
 #thank-title {
   color: #048ec6;
   margin: 20px 0;
     text-align: center;
+}
+
+
+.video-list-thumbs{}
+.video-list-thumbs > li{
+    margin-top: 50px;
+  margin-bottom: -10px;
+}
+.video-list-thumbs > li:last-child{}
+.video-list-thumbs > li > a{
+	display:block;
+	position:relative;
+	background-color: #111;
+	color: #fff;
+	padding: 8px;
+	border-radius:3px
+    transition:all 500ms ease-in-out;
+    border-radius:4px
+}
+.video-list-thumbs > li > a:hover{
+	box-shadow:0 2px 5px rgba(0,0,0,.3);
+	text-decoration:none
+}
+
+
+
+.blockquote-left {
+  background: #f9f9f9;
+  border-left: 6px solid #ccc;
+  padding: 0.5em 5px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.blockquote-right {
+  background: #f9f9f9;
+  border-right: 6px solid #ccc;
+  padding: 0.5em 5px;
+  quotes: "\201C""\201D""\2018""\2019";
+} 
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+blockquote footer {
+  padding: 10px !important;
+}
+
+.fa-social-wrapper {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.jumbotron-bg #top-text-bg {
+    margin-top: 50px;
+}
+
+.jumbotron-bg #text-react {
+    margin-top: 100px;
+}
+
+
+.jumbotron-bg #react-date-link {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.wrapper-btn-jb .eventlama-btn {
+    font-size: 25px !important;
+    font-weight: lighter;
+}
+
+#facebook-box .eventlama-btn {
+    font-size: 18px !important;
+    font-weight: lighter !important;
+      margin-top: 15px;
 }
