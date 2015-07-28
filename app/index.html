@@ -26,6 +26,14 @@
     </script>
   </head>
   <body  data-spy="scroll" data-target=".navbar">
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.4&appId=398468383517984";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -68,28 +76,38 @@
       <section id="home" class="jumbotron-bg">
               <div class="container">
                   <div class="row" id="top-text-bg">
-                    <div class="col-lg-5 ticket-offset col-sm-5 col-sm-offset-2  col-xs-6 col-xs-offset-1" id="text-react">
+                    <div class="col-md-5 ticket-offset col-sm-5 col-sm-offset-2  col-xs-6" id="text-react">
                         <p id="name-react">ReactEurope</p>
                         <p id="date-react" class="visible-sm-block visible-md-block visible-lg-block">
                         <a href="webcal://react-europe.org/docs/react-europe-calendar.ics">
                            <span id="react-date-link">June 02 &amp; 03 2016</span></a> — PARIS, FRANCE</p>
                         <p id="date-react" class="visible-xs-block">June 02 &amp; 03 2016<span id="city">PARIS, FRANCE</span></p>
-<div class="header-social">
+                        <div class="header-social visible-xs">
+                <a href="https://www.facebook.com/ReactEurope?fref=ts" target="_blank"><span class="fa fa-facebook-square fa-2x"></span></a>
+                <a href="https://twitter.com/ReactEurope" target="_blank"><span class="fa fa-twitter-square fa-2x"></span></a>
+                <a href="https://plus.google.com/108919477429469748686" rel="publisher" target="_blank"><span class="fa fa-google-plus-square fa-2x" target="_blank"></span></a>
+      </div>
+<div class="header-social hidden-xs">
                 <a href="https://www.facebook.com/ReactEurope?fref=ts" target="_blank"><span class="fa fa-facebook-square fa-3x"></span></a>
                 <a href="https://twitter.com/ReactEurope" target="_blank"><span class="fa fa-twitter-square fa-3x"></span></a>
                 <a href="https://plus.google.com/108919477429469748686" rel="publisher" target="_blank"><span class="fa fa-google-plus-square fa-3x" target="_blank"></span></a>
       </div>
                         
-                          <div class="wrapper-btn-jb">
-                <a class="btn eventlama-btn" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
-Get Notified when tickets go on sales</a>
+                          <div class="wrapper-btn-jb hidden-xs">
+                <a class="btn btn-notification-jb" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
+Get notified when tickets go on sales</a>
             </div>
                     </div>
-                    <div class="col-lg-5 col-xs-5 col-sm-5" id="logo-react">
-                        <img class="img-responsive img-circle" src="images/reacteurope.png" alt="React Europe" width="350" height="350">
+                 <div class="col-xs-6 col-md-5">
+                    <div class="morph pic" id="logo-react">
+                        <img class="img-responsive logo-next" src="images/reacteurope.png" alt="React Europe">
+                         </div>
                 </div>
                 </div>
-                  
+                  <div class="wrapper-btn-jb visible-xs text-center">
+                <a class="btn btn-notification-jb" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
+Get tickets notifications</a>
+            </div>
                      </div>
       </section>
 
@@ -97,7 +115,7 @@ Get Notified when tickets go on sales</a>
       <section id="about">
 	<div class="container">
     <div class="row">
-	    <h1 id="thank-title">Thank you!</h1>
+	    <h1 id="thank-title">THANK YOU!</h1>
         <div class="col-xs-12 col-md-offset-2 col-md-8 lead">
           <p class="text-thank">
               ReactEurope will be back in 2016 in Paris on 2nd and 3rd of June.<br>
@@ -105,13 +123,13 @@ Get Notified when tickets go on sales</a>
             </p>
             
             <ul class="list-unstyled video-list-thumbs row">
-                <li class="col-md-6">
+                <li class="col-xs-12 col-md-6">
 		<a href="https://www.youtube.com/playlist?list=PLCC436JpVnK0Phxld2dD4tM4xPMxJCiRD" title="ReactEurope-Day 1" target="_blank">	   
-          <iframe width="320" height="315" src="https://www.youtube.com/embed/videoseries?list=PLCC436JpVnK0Phxld2dD4tM4xPMxJCiRD" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLCC436JpVnK0Phxld2dD4tM4xPMxJCiRD" frameborder="0" allowfullscreen></iframe>
 			<h4>ReactEurope-Day 1</h4>
 		</a>
 	</li>
-	   <li class="col-md-6">
+	   <li class="col-xs-12 col-md-6">
            <a href="https://www.youtube.com/playlist?list=PLCC436JpVnK3HvUSAHpt-LRJkIK8pQG6R" title="ReactEurope-Day 2" target="_blank">	             <iframe width="320" height="315" src="https://www.youtube.com/embed/videoseries?list=PLCC436JpVnK3HvUSAHpt-LRJkIK8pQG6R" frameborder="0" allowfullscreen></iframe>
 			<h4>ReactEurope-Day 2</h4>
 		</a>
@@ -121,10 +139,6 @@ Get Notified when tickets go on sales</a>
             </div>
               <div class="clearfix"></div>
 
-          <div class="text-center wrapper-btn hide">
-            <a class="btn eventlama-btn" href="https://eventlama.com/#/events/reacteurope/tickets" role="button">Get Notified when tickets go on sales</a>
-              
-	  </div>
 	</div>
                
         </div>
@@ -133,8 +147,8 @@ Get Notified when tickets go on sales</a>
       <section id="social-widget"> 
           <div class="container"> 
               <div class="row"> 
-                 <div class="social-area-first col-md-7">
-                         <h1 id="social-widget-title">WHAT PEOPLE SAYS</h1>
+                 <div class="social-area-first col-xs-12 col-md-7">
+                         <h1 id="social-widget-title">WHAT PEOPLE SAY</h1>
                          <p class="lead">What our previous attendants have to say about ReactEurope 2015.</p>
  
       <div class="carousel slide" data-ride="carousel" id="quote-carousel">
@@ -161,7 +175,6 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
             <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Really impressed by the caliber of the community and talks at <a href="https://twitter.com/ReactEurope">@ReactEurope</a>!</p>&mdash; Martin Konicek (@martinkonicek) <a href="https://twitter.com/martinkonicek/status/616722887614025728">July 2, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
               </div>
           </div>
@@ -170,7 +183,6 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
             <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">But seriously, the biggest deal with <a href="https://twitter.com/ReactEurope">@ReactEurope</a> is the ability to talk with people whose books and articles you read on daily basis.</p>&mdash; Mike Grabowski (@grabbou) <a href="https://twitter.com/grabbou/status/616721686122004485">July 2, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
          </div>
               </div>
           </div>
@@ -179,7 +191,6 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
             <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Guess it&#39;s about time I started tweeting again! <a href="https://twitter.com/ReactEurope">@ReactEurope</a> is quite a blast so far, I&#39;m overwhelmed by all the awesome people!</p>&mdash; Gabriele Cirulli (@gabrielecirulli) <a href="https://twitter.com/gabrielecirulli/status/616713753598361600">July 2, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
              </div>
               </div>
           </div>
@@ -188,7 +199,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
             <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Great first day <a href="https://twitter.com/ReactEurope">@ReactEurope</a>. Awesome speakers, great topics, super networking and it even got a bit cooler by the end :) <a href="https://twitter.com/hashtag/reacteurope?src=hash">#reacteurope</a></p>&mdash; Anna Szwemin (@AnnaSzwemin) <a href="https://twitter.com/AnnaSzwemin/status/616713569829191680">July 2, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
              </div>
               </div>
           </div>
@@ -197,7 +208,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
             <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">10:25pm park run after an amazing first day at <a href="https://twitter.com/hashtag/reacteurope?src=hash">#reacteurope</a>. Yep you read that right; half past ten… <a href="https://t.co/GYftMeYtdS">https://t.co/GYftMeYtdS</a></p>&mdash; Justin Morris (@plasticine) <a href="https://twitter.com/plasticine/status/616708747780448256">July 2, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
             </div>
               </div>
           </div>
@@ -206,7 +217,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">  
             <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">The first day of <a href="https://twitter.com/hashtag/ReactEurope?src=hash">#ReactEurope</a> was great. So many great talks on hot reloading, flux, relay, graphql. Looking forward to tomorrow.</p>&mdash; Ustun Ozgur (@UstunOzgur) <a href="https://twitter.com/UstunOzgur/status/616651415415451648">July 2, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
              </div>
               </div>
           </div>
@@ -215,7 +226,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">  
             <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/ssaunier">@ssaunier</a> you have no idea how great it is ;) Its a bit like christmas, we&#39;re all gonna get amazing toys to play with <a href="https://twitter.com/hashtag/reacteurope?src=hash">#reacteurope</a></p>&mdash; Sébastien Ferré (@SBfrr) <a href="https://twitter.com/SBfrr/status/616634145456959488">July 2, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
          </div>
               </div>
           </div>
@@ -224,7 +235,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">  
             <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">You never stop learning :) Great discussions at the <a href="https://twitter.com/hashtag/ReactEurope?src=hash">#ReactEurope</a> Hackathon! Pleasure to be here. <a href="http://t.co/LxEt3yTBNq">pic.twitter.com/LxEt3yTBNq</a></p>&mdash; Nik Graf (@nikgraf) <a href="https://twitter.com/nikgraf/status/616229510074212352">July 1, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
             </div>
               </div>
           </div>
@@ -233,7 +244,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1"> 
             <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Amazing pre-conference beer&amp;socialize. Thanks! <a href="https://twitter.com/redbadgerteam">@redbadgerteam</a> <a href="https://twitter.com/ReactEurope">@ReactEurope</a></p>&mdash; Jan Myler (@janmyler) <a href="https://twitter.com/janmyler/status/616315691461943296">July 1, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
         </div>
               </div>
           </div>
@@ -243,7 +254,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                   <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/aldenjdaniels">@aldenjdaniels</a> <a href="https://twitter.com/peterjmag">@peterjmag</a> <a href="https://twitter.com/faassen">@faassen</a> <a href="https://twitter.com/TrulsSkeie">@TrulsSkeie</a> had a great time today @ <a href="https://twitter.com/hashtag/reacteurope?src=hash">#reacteurope</a> and hanging out with you guys!! Hope to see you soon</p>&mdash; Henrik Skifjeld (@henrik_gs) <a href="https://twitter.com/henrik_gs/status/617099707085660160">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -253,7 +264,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                  <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Two packed days at <a href="https://twitter.com/ReactEurope">@ReactEurope</a> are over and I&#39;m really excited to put it all to good use! Thank you everyone who made it happen!</p>&mdash; Erik Brännström (@erikbrannstrom) <a href="https://twitter.com/erikbrannstrom/status/617097158962102272">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                     </div>
               </div>
           </div>
@@ -262,7 +273,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                     <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">What a great night talking to great people so passionate and knowledgable about all things react. Thanks to all, a great end to <a href="https://twitter.com/hashtag/reacteurope?src=hash">#reacteurope</a></p>&mdash; Peter Duncanson (@peteduncanson) <a href="https://twitter.com/peteduncanson/status/617104527213338625">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -272,7 +283,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
             <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">Second day at <a href="https://twitter.com/hashtag/reacteurope?src=hash">#reacteurope</a>. Excited to be here. <a href="http://t.co/fg9jGRhJBd">pic.twitter.com/fg9jGRhJBd</a></p>&mdash; piotr f. (@presentday) <a href="https://twitter.com/presentday/status/616881658365652992">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
              </div>
               </div>
           </div>
@@ -281,7 +292,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                     <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">A few fantastic days in Paris for <a href="https://twitter.com/ReactEurope">@ReactEurope</a>. Amazing community and such an exciting future. See you all soon 👏🏻👏🏻👏🏻✈️ <a href="https://twitter.com/hashtag/reacteurope?src=hash">#reacteurope</a></p>&mdash; moz morris (@MozMorris) <a href="https://twitter.com/MozMorris/status/617035435127242752">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -290,7 +301,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                     <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Had an awesome time at <a href="https://twitter.com/hashtag/ReactEurope?src=hash">#ReactEurope</a>, met great people, learned tons of new stuff! Thanks to <a href="https://twitter.com/patcito">@patcito</a> <a href="https://twitter.com/Vjeux">@Vjeux</a> and all others for organizing!</p>&mdash; peterjmag (@peterjmag) <a href="https://twitter.com/peterjmag/status/617101113234485248">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -299,7 +310,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
             <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">. <a href="https://twitter.com/ReactEurope">@reacteurope</a> may be the best conference I&#39;ve ever been to. Every presentation has been stellar.</p>&mdash; Brenton Simpson (@appsforartists) <a href="https://twitter.com/appsforartists/status/616887477601570816">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                      </div>
               </div>
           </div>
@@ -308,7 +319,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                   <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Feel the same. RT <a href="https://twitter.com/appsforartists">@appsforartists</a> . <a href="https://twitter.com/ReactEurope">@reacteurope</a> may be the best conference I&#39;ve ever been to. Every presentation has been stellar.</p>&mdash; Twidi (@twidi) <a href="https://twitter.com/twidi/status/617089502763425793">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -317,7 +328,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
             <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I totally agree with this. Very inspirational. And we are still half of the way to go. Good Job! <a href="https://twitter.com/hashtag/reacteurope?src=hash">#reacteurope</a> <a href="https://t.co/EBbKWvtrtd">https://t.co/EBbKWvtrtd</a></p>&mdash; dandel (@dandel) <a href="https://twitter.com/dandel/status/616888540878626816">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                      </div>
               </div>
           </div>
@@ -326,7 +337,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                    <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Huge thanks to the speakers and team behind <a href="https://twitter.com/ReactEurope">@ReactEurope</a>. It&#39;s been a memorable few days.</p>&mdash; Andreas Eldh (@eldh) <a href="https://twitter.com/eldh/status/617046707466014720">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -335,7 +346,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                    <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/reacteurope?src=hash">#reacteurope</a> was awesome! Full of amazing people and exciting React/JS stuff!</p>&mdash; Yannick Croissant (@yannickc) <a href="https://twitter.com/yannickc/status/617040494032474112">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -344,7 +355,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                   <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Great conference, amazing talks, and awesome people. Thank you <a href="https://twitter.com/ReactEurope">@ReactEurope</a> organising team <a href="https://twitter.com/hashtag/ReactEurope?src=hash">#ReactEurope</a></p>&mdash; Mihai Cîrlănaru (@MCirlanaru) <a href="https://twitter.com/MCirlanaru/status/617005052927057920">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -353,7 +364,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                    <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Thanks <a href="https://twitter.com/hashtag/ReactEurope?src=hash">#ReactEurope</a> and the speakers for an awesome <a href="https://twitter.com/hashtag/React?src=hash">#React</a> conference. Lots of forward-looking content &amp; food for thought for the community.</p>&mdash; Aki Karkkainen (@akikoo) <a href="https://twitter.com/akikoo/status/616986968170217472">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -362,7 +373,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                   <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">Thanks everyone, great conference! It was great meeting you all ;) <a href="https://twitter.com/hashtag/reacteurope?src=hash">#reacteurope</a> <a href="https://twitter.com/hashtag/reactjs?src=hash">#reactjs</a> <a href="http://t.co/nagJmS0z5E">pic.twitter.com/nagJmS0z5E</a></p>&mdash; Marcin Kumorek (@qmmr) <a href="https://twitter.com/qmmr/status/617088671364329472">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -371,8 +382,8 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                  <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/chantastic">@chantastic</a> <a href="https://twitter.com/Vjeux">@Vjeux</a> ...and huge thx for the amazing organisation, to all the speakers and the two mind-blowing days! <a href="https://twitter.com/ReactEurope">@ReactEurope</a> <a href="https://twitter.com/reactjs">@reactjs</a></p>&mdash; Nicola Molinari (@emmenko) <a href="https://twitter.com/emmenko/status/617030370043785216">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
                 </div>
               </div>
           </div>
@@ -381,7 +392,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
           <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I know that it&#39;s not what it&#39;s all about, but the food and catering is just amazing! Big ups <a href="https://twitter.com/ReactEurope">@ReactEurope</a></p>&mdash; Jan Myler (@janmyler) <a href="https://twitter.com/janmyler/status/616940264100245504">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                      </div>
               </div>
           </div>
@@ -390,7 +401,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                   <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Now I have around 20 A4 pages of notes to try stuff etc. :-). Really motivating! <a href="https://twitter.com/hashtag/reacteurope?src=hash">#reacteurope</a> <a href="https://twitter.com/hashtag/reactjs?src=hash">#reactjs</a></p>&mdash; lxanders (@lxanders) <a href="https://twitter.com/lxanders/status/617025105655414784">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -399,7 +410,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                      <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Thank you <a href="https://twitter.com/ReactEurope">@ReactEurope</a>. So great to have those amazing talks in the old continent.</p>&mdash; Nicolas Fortin (@nicolas_for) <a href="https://twitter.com/nicolas_for/status/617010488006823936">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -408,7 +419,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                   <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Time to say goodbye <a href="https://twitter.com/hashtag/ReactEurope?src=hash">#ReactEurope</a>. Really great experience! @ Espace Charenton Paris 12 <a href="https://t.co/OtL9CYUcGO">https://t.co/OtL9CYUcGO</a></p>&mdash; Bartosz Gryszko (@bgryszko) <a href="https://twitter.com/bgryszko/status/617007989132783616">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -417,7 +428,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                   <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">.<a href="https://twitter.com/ReactEurope">@ReactEurope</a> is over now. A big thanks to the great team behind it <a href="https://twitter.com/patcito">@patcito</a> <a href="https://twitter.com/katy_gca">@katy_gca</a> <a href="https://twitter.com/Vjeux">@Vjeux</a> 👏👏 <a href="http://t.co/BWpmGWLMUK">pic.twitter.com/BWpmGWLMUK</a></p>&mdash; Constantine Nicolaou (@cnicolaou) <a href="https://twitter.com/cnicolaou/status/617007316420816896">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -426,7 +437,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                   <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/ReactEurope?src=hash">#ReactEurope</a> Q&amp;A session. Thanks <a href="https://twitter.com/ReactEurope">@ReactEurope</a> for an awesome conference. Lots of takeaways and conventions challenged <a href="http://t.co/v823N46NuK">pic.twitter.com/v823N46NuK</a></p>&mdash; Aki Karkkainen (@akikoo) <a href="https://twitter.com/akikoo/status/616995072681209856">July 3, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -435,7 +446,7 @@ Get Notified when tickets go on sales</a>
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                   <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Had a great time at <a href="https://twitter.com/hashtag/ReactEurope?src=hash">#ReactEurope</a> and Paris. Let’s do this again.</p>&mdash; Philipp Kruse (@sphire) <a href="https://twitter.com/sphire/status/617987856494133249">July 6, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 </div>
               </div>
           </div>
@@ -444,13 +455,16 @@ Get Notified when tickets go on sales</a>
              
                      <div id="facebook-box" class="social-box">
                          <div class="col-md-6">
-                         Be the first to know when tickets are available.
-              <span class="wrapper-btn-thank">
-                <a class="btn eventlama-btn" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
-Get Notified when tickets go on sales</a>
-            </span>
+                         <p>Be the first to know when tickets are available!</p>
+              
+                <a class="btn btn-notification-sa" href="#" role="button" data-toggle="modal" data-target="#ticketModal">
+Get notified when tickets go on sales</a>
+            
                              </div>
-				<div class="fb-like-box fb_iframe_widget col-md-6" data-href="http://www.facebook.com/howtoweb" data-width="270" data-height="340" data-show-faces="true" data-stream="false" data-show-border="false" data-header="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=492234277477134&amp;container_width=284&amp;header=false&amp;height=340&amp;href=http%3A%2F%2Fwww.facebook.com%2Fhowtoweb&amp;locale=en_GB&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=270"><span style="vertical-align: bottom; width: 270px; height: 214px;"><iframe name="f23f522208" width="270px" height="340px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="http://www.facebook.com/plugins/like_box.php?app_id=492234277477134&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FX9pYjJn4xhW.js%3Fversion%3D41%23cb%3Df12eda75dc%26domain%3D2013.howtoweb.co%26origin%3Dhttp%253A%252F%252F2013.howtoweb.co%252Ff2d398648%26relation%3Dparent.parent&amp;container_width=284&amp;header=false&amp;height=340&amp;href=http%3A%2F%2Fwww.facebook.com%2Fhowtoweb&amp;locale=en_GB&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=270" style="border: none; visibility: visible; width: 270px; height: 214px;" class=""></iframe></span></div>
+                         
+				<div class="col-md-6 wrapper-fb-page">
+                         <div class="fb-page" data-href="https://www.facebook.com/reacteurope" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/reacteurope"><a href="https://www.facebook.com/reacteurope">ReactEurope</a></blockquote></div></div>
+                         </div>
 			</div>
           
         
@@ -461,7 +475,7 @@ Get Notified when tickets go on sales</a>
     </div> 
                   <div class="social-area-second col-md-5">
 				<h1 id="blog-section-title">Blog</h1>
-					<h2>ReactEurope articles</h2>	
+					<h2>ReactEurope articles</h2>
                       <blockquote class="blockquote-right">
                           <p>The organizers should be very proud of themselves for putting together a program that was full of high-quality talks, and I fully intend on going next year.</p>
                           <footer>Jon Lebensold <cite title="Source Title1"><a href=" https://medium.com/@jonlebensold/thoughts-from-reacteurope-2015-bf9d8e42632" target="_blank">Thoughts from ReactEurope 2015</a></cite></footer>
@@ -492,7 +506,7 @@ Get Notified when tickets go on sales</a>
           
 </section>
 
-      <footer id="footer-bg"></footer>
+      <footer class="hidden-xs" id="footer-bg"></footer>
 
 <div>
 <!-- Modal -->

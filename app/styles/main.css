@@ -373,6 +373,9 @@ section#home {
 }
 
 @media (max-width: 767px) {
+    .wrapper-btn-jb {
+        margin: 15px 0px 20px;
+    }
     .sponsor-logo-silver {
   width: 90%;
 }
@@ -422,6 +425,55 @@ section#home {
 }
 
 @media (max-width: 768px) {
+    .social-area-second {
+    padding-bottom: 60px;
+}
+    .wrapper-fb-page {
+        margin-top: 25px;
+    }
+    #social-widget-title {
+  text-align: center;
+}
+    #facebook-box {
+      margin-top: 20px;
+}
+    
+    .social-area-first p {
+        color: #fff;
+    }
+    .video-list-thumbs iframe {
+    width: 250px;
+        height: 250px;
+}
+    .video-list-thumbs > li {
+   margin-top: 20px;
+}
+     #organizers .img-circle-org {
+        border: 1px solid rgb(224, 126, 36);
+        border-radius: 50%;
+        width: 50px;
+    }
+    
+    #top-text-bg {
+          margin-top: 20px;
+    }
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+    
     #sponsor-logo-maltem {
   width: 98%;
 } 
@@ -466,6 +518,7 @@ section#home {
     padding: 10px !important;
     margin: 0 !important;
 }
+    
 
 .flex-item-sponsor-diamond, .flex-item-sponsor-diamond .front, .flex-item-sponsor-diamond .back {
 	width: 100%;
@@ -482,7 +535,7 @@ section#home {
 }
 
     .flex-item-sponsor-platinium, .flex-item-sponsor-platinium .front {
-    line-height: 150px;
+    line-height: 150px !important;
     }
 .flex-item-sponsor-gold, .flex-item-sponsor-gold .front, .flex-item-sponsor-gold .back {
 	width: 80%;
@@ -535,6 +588,7 @@ section#home {
     
     .img-circle-re {
         border: 2px solid rgb(224, 126, 36);
+        width: 50px;
     }
     .img-square-re {
         border: 2px solid rgb(224, 126, 36);
@@ -565,8 +619,8 @@ section#home {
         padding-left: 0px;
     }
     #logo-react img{
-        width: 100px; 
-        height: 100px;
+        width: 125px; 
+        height: 125px;
     }
     #about p {
         padding-left: 15px;
@@ -627,10 +681,6 @@ section#home {
     }
 }
 
-
-section#about {
-    padding-bottom: 60px;
-}
 
 h2.title {
     text-align: center;
@@ -770,6 +820,93 @@ cursor: pointer;
     }
 
     @media (min-width: 768px) {
+        #footer-bg {
+        padding: 10px 0;
+    background-color: #333333;
+    }
+        #facebook-box {
+      margin-top: 72px;
+}
+        .btn-notification-sa, 
+        .btn-notification-sa:link {
+  margin-top: 20px;
+}
+        .social-area-first {
+  background: #fff;
+}
+        section#about {
+    padding-bottom: 60px;
+}
+        .video-list-thumbs iframe {
+    width: 320px;
+            height: 315px;
+}
+        .video-list-thumbs > li{
+    margin-top: 50px;
+  margin-bottom: -10px;
+}
+        .wrapper-btn-jb {
+        margin-top: 90px;
+    text-align: right;
+    }
+        .pic {
+  margin-left: 70px;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+   
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}
+/*MORPH*/
+.morph {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.morph:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+        #quote-carousel {
+      margin-bottom: 0;
+    }
+        
+        .jumbotron-bg {
+    background-image: url(/images/jumbotron-bg.jpg);
+    background-position: 40% 30%;
+    height: 520px;
+}
+
+        .jumbotron-bg #text-react .header-social a {
+    margin-left: 5px !important;
+}
+
+
+.jumbotron-bg #top-text-bg {
+    margin-top: 50px;
+}
+
+.jumbotron-bg #text-react {
+    margin-top: 10px;
+}
+
+
+.jumbotron-bg #react-date-link {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+        
         .ticket-type {
         min-height: 150px;
     }
@@ -1029,8 +1166,10 @@ cursor: pointer;
   padding-bottom: 70px;
     }
 
-    #organizers .img-circle-org {
+ #organizers .img-circle-org {
         border: 1px solid rgb(224, 126, 36);
+        border-radius: 50%;
+
     }
 
     #organizers a {
@@ -1532,11 +1671,7 @@ and (orientation : portrait)
   margin-top: 50px;
 }
 }
-@media (max-width: 768px) {
-.flex-item-sponsor-platinum .front   {
-    line-height: 150px !important;
-}
-}
+
 
 .wrapper-btn {
   margin-top: 30px;
@@ -1548,26 +1683,9 @@ and (orientation : portrait)
     text-align: center;
 }
 
-.wrapper-btn-jb {
-        margin-top: 90px;
-    text-align: right;
-    }
 
  section#social-widget {
-        background-color: #f0f0f0;
-    }
-
-.social-area-first {
-  background: #fff;
-}
-
-#facebook-box {
-      margin-top: 72px;
-}
-
-#footer-bg {
-        padding: 10px 0;
-    background-color: #f0f0f0;
+       background-color: #333333;
     }
 
 #social-widget-title {
@@ -1594,14 +1712,6 @@ a.footer-more-link:focus {
   color: #56c9f8;
     text-decoration: none;
 }
-
-
-.jumbotron-bg {
-    background-image: url(/images/jumbotron-bg.jpg);
-    background-position: 40% 30%;
-    height: 515px;
-}
-
 
 
 
@@ -1665,47 +1775,13 @@ a.footer-more-link:focus {
 }
 
 .item blockquote p:before {
-    content: "\f10d";
-    font-family: 'Fontawesome';
-    float: left;
-    margin-right: 10px;
+      color: #777;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
 }
 
-
-
-/**
-  MEDIA QUERIES
-*/
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    #quote-carousel 
-    {
-      margin-bottom: 0;
-    }
-    
-}
-
-/* Small devices (tablets, up to 768px) */
-@media (max-width: 768px) { 
-    
-    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
-    
-    #quote-carousel .carousel-indicators {
-        bottom: -20px !important;  
-    }
-    #quote-carousel .carousel-indicators li {
-        display: inline-block;
-        margin: 0px 5px;
-        width: 15px;
-        height: 15px;
-    }
-    #quote-carousel .carousel-indicators li.active {
-        margin: 0px 5px;
-        width: 20px;
-        height: 20px;
-    }
-}
 
 
 .fa-testimonials {
@@ -1732,46 +1808,41 @@ float: right;
 }
 
 
-.video-list-thumbs{}
-.video-list-thumbs > li{
-    margin-top: 50px;
-  margin-bottom: -10px;
-}
-.video-list-thumbs > li:last-child{}
 .video-list-thumbs > li > a{
 	display:block;
 	position:relative;
 	background-color: #111;
 	color: #fff;
 	padding: 8px;
-	border-radius:3px
+	border-radius:3px;
     transition:all 500ms ease-in-out;
-    border-radius:4px
 }
 .video-list-thumbs > li > a:hover{
 	box-shadow:0 2px 5px rgba(0,0,0,.3);
-	text-decoration:none
+	text-decoration: none;
 }
 
 
 
 .blockquote-left {
-  background: #f9f9f9;
-  border-left: 6px solid #ccc;
+  color: #fff;
+  border-left: 6px solid #5a5a5a;
+    border-right: none;
   padding: 0.5em 5px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 
 .blockquote-right {
-  background: #f9f9f9;
-  border-right: 6px solid #ccc;
+  color: #fff;
+  border-right: 6px solid #5a5a5a;
+    border-left: none;
   padding: 0.5em 5px;
   quotes: "\201C""\201D""\2018""\2019";
 } 
 
 blockquote:before {
-  color: #ccc;
-  content: open-quote;
+  color: #777;
+  content: '“';
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.1em;
@@ -1790,27 +1861,72 @@ blockquote footer {
     text-align: center;
 }
 
-.jumbotron-bg #top-text-bg {
-    margin-top: 50px;
+
+.btn-notification-jb, .btn-notification-jb:link {
+    font-size: 16px;
+    color: #fff;
+  background-color: #de113a;
+  border-color: #cc1035;
+    border-radius: 0px;
+  font-family: avenir,helvetica,arial,sans-serif;
+  letter-spacing: .15em;
+  padding: 1em .75em;
+  text-transform: uppercase;
 }
 
-.jumbotron-bg #text-react {
-    margin-top: 100px;
+.btn-notification-jb:hover, 
+.btn-notification-jb:focus {
+  color: #fff;
+        opacity: .9;
+        transition: all .3s ease 0s;
+
+}
+
+.btn-notification-sa, 
+.btn-notification-sa:link {
+    color: #fff;
+  background-color: #1e90ff;
+  border-color: #1e90ff;
+    border-radius: 0px;
+  font-family: avenir,helvetica,arial,sans-serif;
+  padding: 1em .75em;
+}
+
+.btn-notification-sa:hover, 
+.btn-notification-sa:focus {
+  color: #fff;
+        opacity: .75;
+        transition: all .3s ease 0s;
+
 }
 
 
-.jumbotron-bg #react-date-link {
-    font-size: 20px;
-    font-weight: bolder;
-}
 
-.wrapper-btn-jb .eventlama-btn {
-    font-size: 25px !important;
-    font-weight: lighter;
-}
 
 #facebook-box .eventlama-btn {
     font-size: 18px !important;
     font-weight: lighter !important;
       margin-top: 15px;
+}
+
+ 
+.social-area-second h2 {
+    color:#337ab7;
+}
+
+.fa-social-wrapper a:not(:first-child) {
+    margin-left: 10px;
+}
+
+.logo-next {
+opacity: 0.7;
+}
+
+.logo-next:hover {
+    opacity: 1;
+}
+
+.carousel-inner {
+min-height: 230px !important;
+max-height: 230px !important;
 }
