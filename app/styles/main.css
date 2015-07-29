@@ -33,10 +33,6 @@ section#home {
 }
 
 @media (max-width: 1024px) {
-    .video-list-thumbs iframe {
-  width: 250px;
-  height: 190px;
-}
     .header-social{
         float:right;
         color: white;
@@ -321,8 +317,7 @@ section#home {
         margin-left: 0px;
         margin-right: 0px;
     }   
-    #home {
-    }
+    
     #text-react{
         padding-top: 25px;
     }
@@ -394,7 +389,7 @@ section#home {
     }
     
     .jumbotron-bg {
-    background-image: url(/images/jumbotron-bg.jpg);
+    background-image: url(/images/jumbotron-bg-xs.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -452,7 +447,8 @@ section#home {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
-    .jumbotron-bg {
+
+.jumbotron-bg {
   background-image: url(/images/jumbotron-bg.jpg);
   background-position: 40% 30%;
   height: 500px;
@@ -473,7 +469,6 @@ section#home {
 }
 
 @media (max-width: 768px) {
-   
     .fb_iframe_widget span { 
     width: 240px !important; 
 }
@@ -501,10 +496,7 @@ section#home {
     .video-list-thumbs > li {
    margin-top: 20px;
 }
-    .video-list-thumbs iframe {
-    width: 300px;
-    height: 200px;
-}
+    
      #organizers .img-circle-org {
         border: 1px solid rgb(224, 126, 36);
         border-radius: 50%;
@@ -856,7 +848,11 @@ cursor: pointer;
     }
 
     @media (min-width: 768px) {
-        
+.jumbotron-bg {
+    background-image: url(/images/jumbotron-bg.jpg);
+    background-repeat: no-repeat;
+        background-position: 40% 30%;
+}   
         .video-list-thumbs > li{
     margin-top: 50px;
   margin-bottom: -10px;
@@ -1638,10 +1634,6 @@ and (orientation : portrait)
 }
 
 @media (min-width: 1025px) {
-    .video-list-thumbs iframe {
-  width: 320px; 
-  height: 250px; 
-}
     .pic {
   height: 300px;
   width: 300px;
@@ -1854,26 +1846,9 @@ float: right;
     text-align: center;
 }
 
-
-.video-list-thumbs > li > a{
-	display:block;
-	position:relative;
-	background-color: #111;
-	color: #fff;
-	padding: 8px;
-	border-radius:3px;
-    transition:all 500ms ease-in-out;
-}
-.video-list-thumbs > li > a:hover{
-	box-shadow:0 2px 5px rgba(0,0,0,.3);
-	text-decoration: none;
-}
-
-
-
 .blockquote-left {
   color: #fff;
-  border-left: 6px solid #5a5a5a;
+  border-left: 4px solid #5a5a5a;
     border-right: none;
   padding: 0.5em 5px;
   quotes: "\201C""\201D""\2018""\2019";
@@ -1881,7 +1856,7 @@ float: right;
 
 .blockquote-right {
   color: #fff;
-  border-right: 6px solid #5a5a5a;
+  border-right: 4px solid #5a5a5a;
     border-left: none;
   padding: 0.5em 5px;
   quotes: "\201C""\201D""\2018""\2019";
@@ -1977,13 +1952,7 @@ max-height: 230px !important;
 }
 
 @media (min-width: 319px) and (max-width: 321px){
-    .video-list-thumbs > li > a {
-        padding: 5px !important;
-  }
-    .video-list-thumbs iframe {
-    width: 220px;
-    height: 170px;
-}
+    
     #home #text-react  {
         font-size: 20px;
         color: #FFFFFF;
@@ -2008,14 +1977,6 @@ max-height: 230px !important;
         margin-left: 10px;
     }
 }
-
-@media (min-width: 360px) and (max-width: 361px){
-    .video-list-thumbs iframe {
-    width: 260px;
-    height: 200px;
-}
-}
-
   
 
 @media (min-width: 960px) and (max-width: 961px){
@@ -2023,10 +1984,18 @@ max-height: 230px !important;
     width: 240px; 
     height: 240px;
 }
+    .wrapper-btn-jb {
+    margin-left: 80px;
+    margin-top: 110px;
+}
 }
 
 
 @media (min-width: 600px) and (max-width: 601px){
+    .video-list-thumbs iframe {
+    width: 100% !important;
+        height: 250px !important;
+}
     #name-react {
     font-size: 50px;
 }
@@ -2036,16 +2005,32 @@ max-height: 230px !important;
     .wrapper-btn-jb {
     margin: 15px 0px 20px 200px;
 }
-    .video-list-thumbs iframe {
-    width: 495px !important;
-    height: 400px !important;
-}
 }
 
-
-@media (min-width: 375px) and (max-width: 376px){
 .video-list-thumbs iframe {
-    width: 250px;
-    height: 190px;
+    width: 100%;
+    height: 100%;
 }
+.video-list-thumbs > li > a{
+	display:block;
+	position:relative;
+	background-color: #111;
+	color: #fff;
+	padding: 8px;
+	border-radius:3px;
+    transition:all 500ms ease-in-out;
+}
+.video-list-thumbs > li > a:hover{
+	box-shadow:0 2px 5px rgba(0,0,0,.3);
+	text-decoration: none;
+}
+
+@media (min-width: 1300px) {
+    .video-list-thumbs iframe {
+    height: 240px !important;
+}
+}
+
+.google-form {
+    width: 100% !important;
 }
