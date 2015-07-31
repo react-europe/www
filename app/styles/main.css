@@ -379,8 +379,8 @@ section#home {
     .pic {
   width: 120px;
   overflow: hidden;
-   -webkit-box-shadow: 5px 5px 5px #111;
-          box-shadow: 5px 5px 5px #111;  
+   -webkit-box-shadow: 5px 5px 5px #383838;
+          box-shadow: 5px 5px 5px #383838;  
 }
    
      #logo-react img{
@@ -489,10 +489,6 @@ section#home {
       margin-top: 20px;
 }
     
-    .social-area-first p {
-        color: #fff;
-    }
-
     .video-list-thumbs > li {
    margin-top: 20px;
 }
@@ -853,13 +849,22 @@ cursor: pointer;
     background-repeat: no-repeat;
         background-position: 40% 30%;
 }   
+
+.jumbotron-bg .color-correction {
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(45, 157, 231, 0.4);
+    width: 100%;
+    height: 520px;
+    top: 0;
+}
         .video-list-thumbs > li{
     margin-top: 50px;
   margin-bottom: -10px;
 }
         #footer-bg {
         padding: 10px 0;
-    background-color: #333333;
+    background-color: #f8f8f8;
     }
        
         .social-area-first {
@@ -1639,8 +1644,8 @@ and (orientation : portrait)
   width: 300px;
   overflow: hidden;
    margin-left: 70px;
-  -webkit-box-shadow: 5px 5px 5px #111;
-          box-shadow: 5px 5px 5px #111;  
+  -webkit-box-shadow: 5px 5px 5px #383838;
+          box-shadow: 5px 5px 5px #383838;  
 }
    
 
@@ -1656,8 +1661,8 @@ and (orientation : portrait)
   width: 300px;
   overflow: hidden;
    margin-left: 90px;
-  -webkit-box-shadow: 5px 5px 5px #111;
-          box-shadow: 5px 5px 5px #111;  
+  -webkit-box-shadow: 5px 5px 5px #383838;
+          box-shadow: 5px 5px 5px #383838;  
 }
       
     .flex-item-sponsor-silver {
@@ -1725,7 +1730,7 @@ and (orientation : portrait)
 
 
  section#social-widget {
-       background-color: #333333;
+       background-color: #f8f8f8;
     }
 
 #social-widget-title {
@@ -1733,7 +1738,7 @@ and (orientation : portrait)
 }
 
 #blog-section-title {
-    color: #fff;
+    color: #337ab7;
 }
 
 .footer-more-link {
@@ -1847,16 +1852,16 @@ float: right;
 }
 
 .blockquote-left {
-  color: #fff;
-  border-left: 4px solid #5a5a5a;
+    background: #f9f9f9;
+  border-left: 4px solid #ccc;
     border-right: none;
   padding: 0.5em 5px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 
 .blockquote-right {
-  color: #fff;
-  border-right: 4px solid #5a5a5a;
+    background: #f9f9f9;
+  border-right: 4px solid #ccc;
     border-left: none;
   padding: 0.5em 5px;
   quotes: "\201C""\201D""\2018""\2019";
@@ -1894,6 +1899,7 @@ blockquote footer {
   letter-spacing: .15em;
   padding: 1em .75em;
   text-transform: uppercase;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.6);
 }
 
 .btn-notification-jb:hover, 
@@ -2034,3 +2040,4 @@ max-height: 230px !important;
 .google-form {
     width: 100% !important;
 }
+
