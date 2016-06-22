@@ -389,7 +389,7 @@ section#home {
     }
     
     .jumbotron-bg {
-    background-image: url(/images/jumbotron-bg-xs.jpg);
+    background-image: url(/images/speakers-photos-2016.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -434,7 +434,7 @@ section#home {
 
 @media (min-width: 770px) {
     .jumbotron-bg {
-    background-image: url(/images/jumbotron-bg.jpg);
+    background-image: url(/images/speakers-photos-2016.jpg);
     background-position: 40% 30%;
     height: 520px;
 }
@@ -449,7 +449,7 @@ section#home {
 }
 
 .jumbotron-bg {
-  background-image: url(/images/jumbotron-bg.jpg);
+  background-image: url(/images/speakers-photos-2016.jpg);
   background-position: 40% 30%;
   height: 500px;
 }
@@ -845,9 +845,9 @@ cursor: pointer;
 
     @media (min-width: 768px) {
 .jumbotron-bg {
-    background-image: url(/images/jumbotron-bg.jpg);
+    background-image: url(/images/speakers-photos-2016.jpg);
     background-repeat: no-repeat;
-        background-position: 40% 30%;
+        background-position: 40% 45%;
 }   
 
 .jumbotron-bg .color-correction {
